@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stackly Agri-Cloud Blog - Expert articles on precision agritech, edge database systems, and sustainable farming networks.">
+  <title>Blog | Stackly Agri-Cloud</title>
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Radial Background & Canvas Particles -->
+  <div class="bg-radial-gradient"></div>
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ==========================================================================
+       NAVBAR
+  ========================================================================== -->
+  <header class="header-nav">
+    <div class="container nav-container">
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-layer-group"></i>
+        <span>Stackly</span>
+      </a>
+
+      <!-- Hamburger Menu Toggle (Mobile) -->
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Menu Drawer -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="blog.html" class="nav-link active">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-buttons">
+          <a href="login.html" class="btn btn-secondary">Login</a>
+          <a href="register.html" class="btn btn-primary">Get Started</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       SECTION 1: FEATURED BLOG POST
+  ========================================================================== -->
+  <section class="blog-featured" style="padding-top: calc(var(--nav-height) + 4rem);">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-tag"><i class="fa-solid fa-newspaper"></i> INSIGHTS</span>
+        <h1 class="section-title">The Agri-Cloud Journal</h1>
+        <p class="section-desc mx-auto" style="margin-bottom: 4rem;">
+          Discover guides, industry articles, and telemetry updates from our engineering and agronomy team.
+        </p>
+      </div>
+
+      <div class="card-glass blog-featured-card reveal">
+        <div class="blog-featured-img">
+          <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1200&q=80&fm=webp" alt="Eco energy solar farms and crops" loading="lazy">
+        </div>
+        <div class="blog-featured-info">
+          <div class="blog-meta">
+            <span><i class="fa-solid fa-tag"></i> Sustainability</span>
+            <span>●</span>
+            <span>June 15, 2026</span>
+          </div>
+          <h2 style="font-size:2rem; margin-bottom:1rem; line-height:1.3;" class="font-title">Recycling Data Center Heat for Greenhouse Vertical Farms</h2>
+          <p style="color:var(--text-muted); font-size:0.95rem; margin-bottom:2rem;">
+            Explore how co-locating server architectures directly adjacent to automated vertical nurseries allows growers to capture CPU heat output, keeping greenhouse temperatures optimal and lowering grid costs.
+          </p>
+          <button class="btn btn-primary">Read Full Post <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: BLOG GRID
+  ========================================================================== -->
+  <section class="blog-grid-section" style="background: rgba(5,8,15,0.4);">
+    <div class="container">
+      <div class="blog-grid">
+        
+        <!-- Post 1 -->
+        <div class="card-glass blog-card reveal">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=600&q=80&fm=webp" alt="IoT sensor probe installation" loading="lazy">
+          </div>
+          <div class="blog-meta">
+            <span>Hardware</span>
+            <span>●</span>
+            <span>May 28, 2026</span>
+          </div>
+          <h3 class="blog-card-title font-title">Deploying Soil Sensors: Best Practices for Long Term Acidity Resistance</h3>
+          <p class="blog-card-desc">
+            A practical guide to positioning sub-surface telemetry nodes to prevent seal rot and optimize data packet transmissions.
+          </p>
+          <button class="btn btn-secondary" style="width:100%;">Read Article</button>
+        </div>
+
+        <!-- Post 2 -->
+        <div class="card-glass blog-card reveal">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&w=600&q=80&fm=webp" alt="Drone telemetry controls" loading="lazy">
+          </div>
+          <div class="blog-meta">
+            <span>APIs & Websockets</span>
+            <span>●</span>
+            <span>May 12, 2026</span>
+          </div>
+          <h3 class="blog-card-title font-title">Drone Telemetry via WebSockets: Direct Flight Route Adjustments</h3>
+          <p class="blog-card-desc">
+            How to coordinate multi-spectral camera drones over secure persistent socket tunnels, allowing real-time mapping updates.
+          </p>
+          <button class="btn btn-secondary" style="width:100%;">Read Article</button>
+        </div>
+
+        <!-- Post 3 -->
+        <div class="card-glass blog-card reveal">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&w=600&q=80&fm=webp" alt="Data center network racks" loading="lazy">
+          </div>
+          <div class="blog-meta">
+            <span>Database</span>
+            <span>●</span>
+            <span>April 30, 2026</span>
+          </div>
+          <h3 class="blog-card-title font-title">MQTT Telemetry For Soil Probes: A Developer's Quick Setup Guide</h3>
+          <p class="blog-card-desc">
+            Learn to connect ESP32 microcontrollers to Stackly's edge clusters, configuring payloads in under 10 lines of code.
+          </p>
+          <button class="btn btn-secondary" style="width:100%;">Read Article</button>
+        </div>
+
+        <!-- Post 4 -->
+        <div class="card-glass blog-card reveal">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=600&q=80&fm=webp" alt="Satellite crop view" loading="lazy">
+          </div>
+          <div class="blog-meta">
+            <span>Satellite Data</span>
+            <span>●</span>
+            <span>April 18, 2026</span>
+          </div>
+          <h3 class="blog-card-title font-title">NDVI Reflection Analysis: Preempting Crop Stress from Space</h3>
+          <p class="blog-card-desc">
+            Understanding how daily satellite sweeps compute NDVI parameters to identify water stress weeks before leaves dry.
+          </p>
+          <button class="btn btn-secondary" style="width:100%;">Read Article</button>
+        </div>
+
+        <!-- Post 5 -->
+        <div class="card-glass blog-card reveal">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=600&q=80&fm=webp" alt="Precision irrigation system" loading="lazy">
+          </div>
+          <div class="blog-meta">
+            <span>Automation</span>
+            <span>●</span>
+            <span>March 25, 2026</span>
+          </div>
+          <h3 class="blog-card-title font-title">Autonomous Irrigation Pipelines via Live Weather APIs</h3>
+          <p class="blog-card-desc">
+            Integrating local rain forecasts into edge controller logic nodes to pause watering cycles, saving resources.
+          </p>
+          <button class="btn btn-secondary" style="width:100%;">Read Article</button>
+        </div>
+
+        <!-- Post 6 -->
+        <div class="card-glass blog-card reveal">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1628352081506-83c43123ed6d?auto=format&fit=crop&w=600&q=80&fm=webp" alt="Clean energy server farm" loading="lazy">
+          </div>
+          <div class="blog-meta">
+            <span>Sustainability</span>
+            <span>●</span>
+            <span>March 04, 2026</span>
+          </div>
+          <h3 class="blog-card-title font-title">Matching CPU Calculations to Local Solar and Wind Power Cycles</h3>
+          <p class="blog-card-desc">
+            A deep dive into Stackly's dynamic grid offloading logic that scales computations in sync with solar farm surpluses.
+          </p>
+          <button class="btn btn-secondary" style="width:100%;">Read Article</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: IN-PAGE NEWSLETTER
+  ========================================================================== -->
+  <section class="blog-newsletter">
+    <div class="container reveal">
+      <div class="card-glass text-center" style="max-width:800px; margin: 0 auto; border-color:var(--secondary); padding:4rem 2rem;">
+        <div style="font-size:2.5rem; color:var(--secondary); margin-bottom:1rem;"><i class="fa-solid fa-envelope-open-text"></i></div>
+        <h2 class="font-title" style="margin-bottom:1rem;">Stay Connected to Agritech Progress</h2>
+        <p style="color:var(--text-muted); max-width:550px; margin: 0 auto 2.5rem auto;">
+          Get new developer guides, database updates, and research papers on sustainable agri-compute solutions delivered straight to your inbox.
+        </p>
+        <form class="newsletter-form mx-auto" style="max-width:500px;" onsubmit="event.preventDefault()">
+          <input type="email" placeholder="Enter your business email" required style="padding:1rem;">
+          <button class="btn btn-accent" style="padding: 0 2rem;">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: DEVELOPER RESOURCES
+  ========================================================================== -->
+  <section class="blog-resources" style="background: rgba(5,8,15,0.4);">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-tag"><i class="fa-solid fa-code"></i> TECHNICAL REPO</span>
+        <h2 class="section-title">Developer Resource Hub</h2>
+      </div>
+
+      <div class="solutions-grid">
+        <div class="card-glass reveal">
+          <div class="solution-icon" style="color:var(--primary);"><i class="fa-solid fa-book-bookmark"></i></div>
+          <h3 class="solution-title font-title">Systems Documentation</h3>
+          <p class="solution-desc" style="font-size:0.9rem;">
+            Read comprehensive guides covering cluster orchestration, telemetry schemas, and API rate allocations.
+          </p>
+          <button class="btn btn-secondary" style="width:100%;">Browse Docs</button>
+        </div>
+
+        <div class="card-glass reveal">
+          <div class="solution-icon" style="color:var(--secondary);"><i class="fa-solid fa-cubes"></i></div>
+          <h3 class="solution-title font-title">SDK Libraries</h3>
+          <p class="solution-desc" style="font-size:0.9rem;">
+            Download telemetry socket packaging libraries pre-written in Python, Node.js, and C++ for ESP32.
+          </p>
+          <button class="btn btn-secondary" style="width:100%;">View GitHub Repo</button>
+        </div>
+
+        <div class="card-glass reveal">
+          <div class="solution-icon" style="color:var(--accent);"><i class="fa-brands fa-discord"></i></div>
+          <h3 class="solution-title font-title">Community Discord</h3>
+          <p class="solution-desc" style="font-size:0.9rem;">
+            Join 8,000+ agritech developers to share code snippets, hardware recommendations, and project concepts.
+          </p>
+          <button class="btn btn-secondary" style="width:100%;">Join Discord Server</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+  ========================================================================== -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <i class="fa-solid fa-layer-group"></i>
+          <span>Stackly</span>
+        </a>
+        <p>
+          Digitizing the world's crops through low-latency telemetry databases and carbon-neutral server infrastructure.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="social-link"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-nav-col">
+        <h4>Solutions</h4>
+        <ul class="footer-links">
+          <li><a href="services.html" class="footer-link">Precision Compute</a></li>
+          <li><a href="services.html" class="footer-link">Drone APIs</a></li>
+          <li><a href="services.html" class="footer-link">Data Warehousing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav-col">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html" class="footer-link">About Us</a></li>
+          <li><a href="blog.html" class="footer-link">Latest Blog</a></li>
+          <li><a href="contact.html" class="footer-link">Contact Support</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>Agri-Cloud Insights</h4>
+        <p>Subscribe to receive system announcements and agritech research summaries.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault()">
+          <input type="email" placeholder="Enter email address" required>
+          <button class="btn btn-primary" style="padding:0.75rem;"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>&copy; 2026 Stackly Agri-Cloud Technologies Inc. All rights reserved.</span>
+      <span>Privacy Policy &nbsp;|&nbsp; Terms of Service</span>
+    </div>
+  </footer>
+
+  <!-- Core Javascript -->
+  <script src="main.js"></script>
+
+</body>
+</html>

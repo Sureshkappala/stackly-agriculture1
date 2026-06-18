@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stackly Agri-Cloud - Admin Infrastructure Console">
+  <title>Admin Dashboard | Stackly Agri-Cloud</title>
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dash-layout">
+
+  <!-- Radial Background Glow -->
+  <div class="bg-radial-gradient"></div>
+
+  <!-- ==========================================================================
+       SIDEBAR NAVIGATION
+  ========================================================================== -->
+  <aside class="dash-sidebar">
+    <!-- Brand Logo -->
+    <div class="logo dash-logo">
+      <i class="fa-solid fa-layer-group"></i>
+      <span>Stackly</span>
+    </div>
+
+    <!-- Admin Information Card -->
+    <div class="dash-user-info" style="margin-bottom: 2.5rem; background: rgba(255,255,255,0.02); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-color);">
+      <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=80&q=80&fm=webp" alt="Admin profile avatar" class="dash-user-avatar" style="border-color:var(--primary);">
+      <div>
+        <h4 style="font-size:0.95rem; font-weight:600;">Systems Admin</h4>
+        <span style="font-size:0.75rem; color:var(--secondary);"><i class="fa-solid fa-shield-halved"></i> Root Privilege</span>
+      </div>
+    </div>
+
+    <!-- Sidebar Menus -->
+    <ul class="dash-menu-list">
+      <li>
+        <a href="#" class="dash-menu-item-link active">
+          <i class="fa-solid fa-server"></i> Server Clusters
+        </a>
+      </li>
+      <li>
+        <a href="#" class="dash-menu-item-link">
+          <i class="fa-solid fa-earth-americas"></i> Global Map
+        </a>
+      </li>
+      <li>
+        <a href="#" class="dash-menu-item-link">
+          <i class="fa-solid fa-shield-halved"></i> Firewall Rules
+        </a>
+      </li>
+      <li>
+        <a href="#" class="dash-menu-item-link">
+          <i class="fa-solid fa-terminal"></i> Compute Logs
+        </a>
+      </li>
+    </ul>
+
+    <!-- Logout Button (Redirects to index.html) -->
+    <a href="index.html" class="btn btn-secondary dash-logout-btn" id="logout-btn">
+      <i class="fa-solid fa-right-from-bracket"></i> Logout
+    </a>
+  </aside>
+
+  <!-- ==========================================================================
+       MAIN CONTENT CONTAINER
+  ========================================================================== -->
+  <main class="dash-main">
+    <header class="dash-header">
+      <div>
+        <h1 class="font-title" style="font-size: 1.75rem; margin-bottom: 0.25rem;">Infrastructure Console</h1>
+        <p style="color:var(--text-muted); font-size:0.9rem;">Global server nodes & computing load metrics</p>
+      </div>
+      <div style="font-size:0.9rem; color:var(--text-muted);">
+        <i class="fa-solid fa-network-wired"></i> Core Status: <span style="color:var(--primary); font-weight:600;">Optimal</span>
+      </div>
+    </header>
+
+    <!-- Metrics Grid -->
+    <div class="dash-grid-metrics">
+      <!-- Card 1 -->
+      <div class="dash-metric-box">
+        <div class="dash-metric-title">Overall CPU Load</div>
+        <div class="dash-metric-number gradient-text">32.4%</div>
+        <div class="dash-metric-trend up"><i class="fa-solid fa-check"></i> Normal Threshold</div>
+      </div>
+      <!-- Card 2 -->
+      <div class="dash-metric-box">
+        <div class="dash-metric-title">Server Heat Index</div>
+        <div class="dash-metric-number gradient-text-alt">48.2 &deg;C</div>
+        <div class="dash-metric-trend down"><i class="fa-solid fa-arrow-trend-down"></i> Greenhouse Recycling</div>
+      </div>
+      <!-- Card 3 -->
+      <div class="dash-metric-box">
+        <div class="dash-metric-title">Active MQTT Tunnels</div>
+        <div class="dash-metric-number">14,802</div>
+        <div class="dash-metric-trend up"><i class="fa-solid fa-arrow-trend-up"></i> +410 today</div>
+      </div>
+      <!-- Card 4 -->
+      <div class="dash-metric-box">
+        <div class="dash-metric-title">Free Storage</div>
+        <div class="dash-metric-number" style="color:var(--secondary);">84.5 TB</div>
+        <div class="dash-metric-trend up"><i class="fa-solid fa-check"></i> 82% capacity remaining</div>
+      </div>
+    </div>
+
+    <!-- Details Panels -->
+    <div class="dash-panel-grid">
+      <!-- Cluster Status List -->
+      <div class="dash-panel-box">
+        <h3 class="font-title"><i class="fa-solid fa-circle-nodes" style="color:var(--secondary);"></i> Global Edge Node Registry</h3>
+        
+        <div class="system-status-list">
+          <!-- Node 1 -->
+          <div class="system-status-item">
+            <div class="system-status-info">
+              <h4>US West Edge Node (San Joaquin)</h4>
+              <p>Active: 4,120 nodes connected | Solar battery: 94%</p>
+            </div>
+            <div class="status-indicator online"><i class="fa-solid fa-circle-check"></i> Online</div>
+          </div>
+          <!-- Node 2 -->
+          <div class="system-status-item">
+            <div class="system-status-info">
+              <h4>Europe North Node (Amsterdam)</h4>
+              <p>Active: 6,840 nodes connected | Heat venting: recycling active</p>
+            </div>
+            <div class="status-indicator online"><i class="fa-solid fa-circle-check"></i> Online</div>
+          </div>
+          <!-- Node 3 -->
+          <div class="system-status-item">
+            <div class="system-status-info">
+              <h4>Asia East Edge (Tokyo)</h4>
+              <p>Active: 2,510 nodes connected | Solar battery: 82%</p>
+            </div>
+            <div class="status-indicator online"><i class="fa-solid fa-circle-check"></i> Online</div>
+          </div>
+          <!-- Node 4 -->
+          <div class="system-status-item">
+            <div class="system-status-info">
+              <h4>SA East Node (São Paulo)</h4>
+              <p>Warning: Power grid fluctuations | Shifting backup tasks</p>
+            </div>
+            <div class="status-indicator warning"><i class="fa-solid fa-triangle-exclamation"></i> Warning</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Panel -->
+      <div class="dash-panel-box">
+        <h3 class="font-title"><i class="fa-solid fa-screwdriver-wrench" style="color:var(--primary);"></i> Root Operations</h3>
+        <p style="color:var(--text-muted); font-size:0.85rem; margin-bottom:1.5rem;">
+          Trigger cluster restarts or change global firewall rules.
+        </p>
+
+        <div style="display:flex; flex-direction:column; gap:1rem;">
+          <button class="btn btn-primary" style="justify-content:flex-start; padding:1rem;"><i class="fa-solid fa-rotate"></i> Reboot Cluster Nodes</button>
+          <button class="btn btn-secondary" style="justify-content:flex-start; padding:1rem;"><i class="fa-solid fa-shield-halved"></i> Lock Down Firewall Rules</button>
+          <button class="btn btn-secondary" style="justify-content:flex-start; padding:1rem;"><i class="fa-solid fa-database"></i> Wipe Diagnostic Logs</button>
+          <button class="btn btn-accent" style="justify-content:flex-start; padding:1rem;"><i class="fa-solid fa-terminal"></i> Enter Recovery Shell</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Shared Actions Parser -->
+  <script src="main.js"></script>
+
+</body>
+</html>

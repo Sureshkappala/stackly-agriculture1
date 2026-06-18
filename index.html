@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stackly Agri-Cloud - High-performance data hosting, low latency server compute, and precision telemetry solutions for smart agriculture.">
+  <title>Stackly | Agriculture Cloud & Data Centers</title>
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Radial Background & Canvas Particles -->
+  <div class="bg-radial-gradient"></div>
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ==========================================================================
+       NAVBAR
+  ========================================================================== -->
+  <header class="header-nav">
+    <div class="container nav-container">
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-layer-group"></i>
+        <span>Stackly</span>
+      </a>
+
+      <!-- Hamburger Menu Toggle (Mobile) -->
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Menu Drawer -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-buttons">
+          <a href="login.html" class="btn btn-secondary">Login</a>
+          <a href="register.html" class="btn btn-primary">Get Started</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       SECTION 1: HERO
+  ========================================================================== -->
+  <section class="hero" id="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content reveal">
+        <div class="hero-tag">
+          <i class="fa-solid fa-bolt"></i> precision smart farming
+        </div>
+        <h1>Next-Gen <br><span class="gradient-text">Agricultural Cloud</span> & Data Hosting</h1>
+        <p>
+          Scale your crop metrics, soil sensor pipelines, and autonomous machinery fleet on Stackly's low-latency edge servers. Built directly next to global farming grids.
+        </p>
+        <div class="hero-buttons">
+          <a href="register.html" class="btn btn-primary">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+          <button class="btn btn-secondary">Explore Services</button>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="hero-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1628352081506-83c43123ed6d?auto=format&fit=crop&w=1200&q=80&fm=webp" alt="Automated Agri-tech green farm data arrays" loading="eager">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: STATS
+  ========================================================================== -->
+  <section class="stats reveal">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <div class="stat-num gradient-text">250K+</div>
+        <div class="stat-label">Hectares Managed</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num gradient-text">4.2M</div>
+        <div class="stat-label">Active IoT Nodes</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num gradient-text">99.99%</div>
+        <div class="stat-label">Telemetry Uptime</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num gradient-text">&lt; 8ms</div>
+        <div class="stat-label">Edge Node Latency</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: SOLUTIONS
+  ========================================================================== -->
+  <section class="solutions" id="solutions-section">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-tag"><i class="fa-solid fa-sliders"></i> Edge Solutions</span>
+        <h2 class="section-title">Telemetry Driven Agriculture</h2>
+        <p class="section-desc mx-auto">
+          We combine cloud storage grids with soil diagnostics models to deliver micro-latency analytics to the field.
+        </p>
+      </div>
+
+      <div class="solutions-grid">
+        <!-- Solution 1 -->
+        <div class="card-glass reveal">
+          <div class="solution-icon">
+            <i class="fa-solid fa-droplet"></i>
+          </div>
+          <h3 class="solution-title font-title">Precision Hydration</h3>
+          <p class="solution-desc">
+            Autonomous sensor networks measure localized leaf transpiration rates to optimize water consumption cycles.
+          </p>
+          <a href="#" class="solution-link">Read SLA Details <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+
+        <!-- Solution 2 -->
+        <div class="card-glass reveal">
+          <div class="solution-icon">
+            <i class="fa-solid fa-brain"></i>
+          </div>
+          <h3 class="solution-title font-title">Neural Crop Forecasting</h3>
+          <p class="solution-desc">
+            Deploy trained custom agronomy neural networks directly on edge hosting nodes for real-time yield estimates.
+          </p>
+          <a href="#" class="solution-link">View Documentation <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+
+        <!-- Solution 3 -->
+        <div class="card-glass reveal">
+          <div class="solution-icon">
+            <i class="fa-solid fa-helicopter"></i>
+          </div>
+          <h3 class="solution-title font-title">Drone Fleets Sync</h3>
+          <p class="solution-desc">
+            Coordinate multi-spectral camera drones over secure web sockets with millisecond precision mapping updates.
+          </p>
+          <a href="#" class="solution-link">API Integration Docs <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: DATA CENTERS SHOWCASE
+  ========================================================================== -->
+  <section class="datacenter" id="datacenter-section">
+    <div class="container dc-grid">
+      <div class="dc-info reveal">
+        <span class="section-tag"><i class="fa-solid fa-server"></i> Server Architecture</span>
+        <h2 class="section-title">Solar-Powered Agri-Data Centers</h2>
+        <p>
+          Our regional data centers are positioned inside rural micro-grids, powered by surrounding solar arrays and wind installations. Excess host heat is recycled directly into crop greenhouse nurseries.
+        </p>
+        
+        <ul class="dc-features-list">
+          <li class="dc-feature-item">
+            <i class="fa-solid fa-circle-nodes"></i>
+            <div>
+              <h4>Greenhouse Co-Location</h4>
+              <p>Host compute servers recycle thermal energy to warm automated vertical crops.</p>
+            </div>
+          </li>
+          <li class="dc-feature-item">
+            <i class="fa-solid fa-leaf"></i>
+            <div>
+              <h4>Carbon-Negative Computations</h4>
+              <p>Offload high-density crop simulations when surrounding solar power is in peak surplus.</p>
+            </div>
+          </li>
+        </ul>
+        <button class="btn btn-primary">Locate Nearest Node</button>
+      </div>
+
+      <div class="dc-visual reveal">
+        <div class="dc-panel">
+          <h3 class="font-title"><i class="fa-solid fa-microchip"></i> Agri-Rack Node #08</h3>
+          <div class="dc-rack-grid">
+            <!-- Server Row 1 -->
+            <div class="dc-rack">
+              <div class="dc-rack-header">
+                <span>CPU Cluster - PRECISION CORE A</span>
+                <div class="dc-leds">
+                  <div class="dc-led active-green"></div>
+                  <div class="dc-led active-green"></div>
+                  <div class="dc-led active-blue"></div>
+                </div>
+              </div>
+              <div class="dc-bars">
+                <div class="dc-bar"><div class="dc-bar-fill" data-width="85%"></div></div>
+              </div>
+            </div>
+            <!-- Server Row 2 -->
+            <div class="dc-rack">
+              <div class="dc-rack-header">
+                <span>DATABASE GRID - SOIL TELEMETRY</span>
+                <div class="dc-leds">
+                  <div class="dc-led active-blue"></div>
+                  <div class="dc-led active-green"></div>
+                  <div class="dc-led"></div>
+                </div>
+              </div>
+              <div class="dc-bars">
+                <div class="dc-bar"><div class="dc-bar-fill" data-width="50%"></div></div>
+              </div>
+            </div>
+            <!-- Server Row 3 -->
+            <div class="dc-rack">
+              <div class="dc-rack-header">
+                <span>DRONE SYNC HOST - COMPUTE</span>
+                <div class="dc-leds">
+                  <div class="dc-led active-green"></div>
+                  <div class="dc-led"></div>
+                  <div class="dc-led active-blue"></div>
+                </div>
+              </div>
+              <div class="dc-bars">
+                <div class="dc-bar"><div class="dc-bar-fill" data-width="72%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: INTERACTIVE HUB (DASHBOARD PREVIEW)
+  ========================================================================== -->
+  <section class="dashboard-preview" id="dashboard-preview-section">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-tag"><i class="fa-solid fa-display"></i> Analytics Hub</span>
+        <h2 class="section-title">Central Operations Interface</h2>
+        <p class="section-desc mx-auto">
+          Manage and monitor all field sensor outputs from a unified glassmorphic analytics control center.
+        </p>
+      </div>
+
+      <!-- Mockup Window -->
+      <div class="dash-window reveal">
+        <div class="dash-titlebar">
+          <div class="dash-dots">
+            <div class="dash-dot red"></div>
+            <div class="dash-dot yellow"></div>
+            <div class="dash-dot green"></div>
+          </div>
+          <div class="dash-title">stackly-agri-dashboard.v1.0</div>
+          <div><i class="fa-solid fa-lock" style="font-size:0.75rem; color:var(--text-muted);"></i></div>
+        </div>
+        
+        <div class="dash-content-mock">
+          <!-- Mock Sidebar -->
+          <div class="dash-sidebar-mock">
+            <div class="dash-side-item active"><i class="fa-solid fa-chart-line"></i> Farm Telemetry</div>
+            <div class="dash-side-item"><i class="fa-solid fa-server"></i> Server Nodes</div>
+            <div class="dash-side-item"><i class="fa-solid fa-gear"></i> Crop Settings</div>
+            <div class="dash-side-item"><i class="fa-solid fa-circle-question"></i> System Help</div>
+          </div>
+          
+          <!-- Mock Dashboard Main -->
+          <div class="dash-main-mock">
+            <div class="dash-cards-row">
+              <div class="dash-metric-card">
+                <div class="dash-metric-header">SOIL NITROGEN</div>
+                <div class="dash-metric-val gradient-text">82 ppm</div>
+              </div>
+              <div class="dash-metric-card">
+                <div class="dash-metric-header">HUMIDITY INDEX</div>
+                <div class="dash-metric-val gradient-text-alt">64.5%</div>
+              </div>
+              <div class="dash-metric-card">
+                <div class="dash-metric-header">DRAINAGE RATE</div>
+                <div class="dash-metric-val">4.8 L/m</div>
+              </div>
+            </div>
+            
+            <!-- Mock SVG Chart -->
+            <div class="dash-chart-panel">
+              <div class="dash-chart-header">
+                <h4 class="dash-chart-title">Real-Time Moisture Telemetry (24h)</h4>
+                <div style="font-size:0.8rem; color:var(--primary);"><span style="color:var(--primary)">●</span> Connected</div>
+              </div>
+              <!-- Clean SVG Line Graph -->
+              <svg viewBox="0 0 500 150" class="dash-chart-svg">
+                <defs>
+                  <linearGradient id="chart-grad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="var(--primary)" stop-opacity="0.3"></stop>
+                    <stop offset="100%" stop-color="var(--primary)" stop-opacity="0.05"></stop>
+                  </linearGradient>
+                </defs>
+                <!-- Grid Lines -->
+                <line x1="0" y1="30" x2="500" y2="30" stroke="rgba(255,255,255,0.03)" stroke-width="1"></line>
+                <line x1="0" y1="75" x2="500" y2="75" stroke="rgba(255,255,255,0.03)" stroke-width="1"></line>
+                <line x1="0" y1="120" x2="500" y2="120" stroke="rgba(255,255,255,0.03)" stroke-width="1"></line>
+                <!-- Filled Area -->
+                <path d="M 0 130 C 50 110, 100 80, 150 95 C 200 110, 250 50, 300 60 C 350 70, 400 40, 450 30 C 475 25, 500 45, 500 45 L 500 150 L 0 150 Z" fill="url(#chart-grad)"></path>
+                <!-- Line -->
+                <path d="M 0 130 C 50 110, 100 80, 150 95 C 200 110, 250 50, 300 60 C 350 70, 400 40, 450 30 C 475 25, 500 45, 500 45" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round"></path>
+                <!-- Pulsing Node Dot -->
+                <circle cx="450" cy="30" r="4" fill="var(--primary)"></circle>
+                <circle cx="450" cy="30" r="8" fill="none" stroke="var(--primary)" stroke-width="1" opacity="0.6"></circle>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 6: TECHNOLOGY INTEGRATION (TABS)
+  ========================================================================== -->
+  <section class="technology" id="technology-section">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-tag"><i class="fa-solid fa-microchip"></i> Agri-Cloud Core</span>
+        <h2 class="section-title">Telemetry Delivery Infrastructure</h2>
+        <p class="section-desc mx-auto">
+          We bundle satellite diagnostics, drone imagery APIs, and deep-soil sensor grids into a single developer-first platform.
+        </p>
+      </div>
+
+      <!-- Tab Buttons -->
+      <div class="tech-tabs reveal">
+        <button class="tech-tab active" data-tab="tab-sensors">Soil Sensor Grids</button>
+        <button class="tech-tab" data-tab="tab-satellite">Satellite Imaging</button>
+        <button class="tech-tab" data-tab="tab-drones">Autonomous Mapping</button>
+      </div>
+
+      <!-- Tab Content 1: Sensors -->
+      <div class="tech-content active" id="tab-sensors">
+        <div class="tech-info">
+          <h3>Soil-Embedded Sub-Microsecond Nodes</h3>
+          <p>
+            Deploy physical hardware arrays directly into crop fields. Our sub-surface sensors read nitrogen, phosphate, pH, and water levels, immediately syncing payload packs to local data center arrays.
+          </p>
+          <div class="tech-details">
+            <div class="tech-detail-box">
+              <i class="fa-solid fa-battery-three-quarters"></i>
+              <h4>10-Year Battery Life</h4>
+              <p>Engineered for high longevity using micro-current solar harvest tech.</p>
+            </div>
+            <div class="tech-detail-box">
+              <i class="fa-solid fa-shield-halved"></i>
+              <h4>Hermetic Shielding</h4>
+              <p>IP68 rugged rating for extreme soil moisture and acidity conditions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tech-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=1200&q=80&fm=webp" alt="Farmer examining soil telemetry sensors" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Tab Content 2: Satellite -->
+      <div class="tech-content" id="tab-satellite">
+        <div class="tech-info">
+          <h3>Orbiting Multi-Spectral Imaging</h3>
+          <p>
+            Process petabytes of hyper-spectral crop health pictures. Stackly's AI APIs overlay vegetation reflectance indexes (NDVI) dynamically, helping you spot stress conditions before they spread.
+          </p>
+          <div class="tech-details">
+            <div class="tech-detail-box">
+              <i class="fa-solid fa-satellite"></i>
+              <h4>24-Hour Pass Frequency</h4>
+              <p>Daily global imagery refreshes for real-time vegetative growth metrics.</p>
+            </div>
+            <div class="tech-detail-box">
+              <i class="fa-solid fa-maximize"></i>
+              <h4>0.3-Meter Precision</h4>
+              <p>Ultra sharp satellite data processing optimized via machine learning.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tech-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&w=1200&q=80&fm=webp" alt="Satellite perspective view of agricultural shapes" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Tab Content 3: Drones -->
+      <div class="tech-content" id="tab-drones">
+        <div class="tech-info">
+          <h3>Autonomous Drones Telemetry</h3>
+          <p>
+            Dispatch unmanned aerial vehicles directly from solarcharging pods. Drones survey fields autonomously, communicating flight telemetry and sensor data payloads to edge data servers.
+          </p>
+          <div class="tech-details">
+            <div class="tech-detail-box">
+              <i class="fa-solid fa-wind"></i>
+              <h4>Autonomous Flight Routing</h4>
+              <p>Sensors route drones automatically based on local wind speeds.</p>
+            </div>
+            <div class="tech-detail-box">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+              <h4>Instant Edge Offloading</h4>
+              <p>Sync imagery data via secure WiFi 6E farm stations.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tech-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=1200&q=80&fm=webp" alt="Precision drone spraying smart farming fields" loading="lazy">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 7: GLOBAL FARM GRID MAP
+  ========================================================================== -->
+  <section class="global-map" id="map-section">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-tag"><i class="fa-solid fa-earth-americas"></i> Node Network</span>
+        <h2 class="section-title">Our Global Hosting Footprint</h2>
+        <p class="section-desc mx-auto">
+          We maintain localized server hubs adjacent to the world's most productive farming basins to guarantee instant telemetry processing.
+        </p>
+      </div>
+
+      <div class="map-container reveal">
+        <div class="map-tooltip" id="map-tooltip"></div>
+        <svg class="map-svg" viewBox="0 0 1000 480">
+          <!-- World map path mock -->
+          <path d="M150,150 L200,130 L220,150 L240,140 L260,180 L290,170 L300,200 L320,180 L350,220 L320,250 L280,280 L250,300 L270,350 L250,380 L220,400 L200,430 L210,450 L190,460 L180,440 L190,380 L200,320 L180,280 L160,250 L120,200 Z M500,100 L550,110 L580,80 L620,100 L680,120 L720,100 L760,130 L800,150 L840,130 L880,160 L920,200 L880,240 L850,220 L800,260 L780,300 L820,330 L850,320 L870,350 L890,380 L850,420 L820,450 L780,430 L740,400 L700,380 L650,370 L600,350 L580,300 L550,250 L520,200 L480,180 Z" opacity="0.3"></path>
+          
+          <!-- Map pins with pulsing circles -->
+          <!-- US West (California) -->
+          <g class="map-pin" transform="translate(180, 160)" data-label="US West Edge Hub (San Joaquin Valley)" data-status="99.99% operational">
+            <circle class="pulse" cx="0" cy="0" r="8" opacity="0.4"></circle>
+            <circle cx="0" cy="0" r="4"></circle>
+          </g>
+          <!-- Europe (Netherlands) -->
+          <g class="map-pin" transform="translate(510, 110)" data-label="Europe North Node (Amsterdam Greenport)" data-status="100% operational">
+            <circle class="pulse" cx="0" cy="0" r="8" opacity="0.4"></circle>
+            <circle cx="0" cy="0" r="4"></circle>
+          </g>
+          <!-- Japan (Tokyo) -->
+          <g class="map-pin" transform="translate(860, 170)" data-label="Asia East Edge (Tokyo Smart Agri)" data-status="99.98% operational">
+            <circle class="pulse" cx="0" cy="0" r="8" opacity="0.4"></circle>
+            <circle cx="0" cy="0" r="4"></circle>
+          </g>
+          <!-- South America (Brazil) -->
+          <g class="map-pin" transform="translate(320, 310)" data-label="SA East Node (São Paulo Agro-grid)" data-status="99.95% operational">
+            <circle class="pulse" cx="0" cy="0" r="8" opacity="0.4"></circle>
+            <circle cx="0" cy="0" r="4"></circle>
+          </g>
+          <!-- Australia (Melbourne) -->
+          <g class="map-pin" transform="translate(820, 390)" data-label="Oceania South Node (Murray-Darling Basin)" data-status="100% operational">
+            <circle class="pulse" cx="0" cy="0" r="8" opacity="0.4"></circle>
+            <circle cx="0" cy="0" r="4"></circle>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 8: CLIENT TESTIMONIALS
+  ========================================================================== -->
+  <section class="testimonials" id="testimonials-section">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-tag"><i class="fa-solid fa-comments"></i> Case Studies</span>
+        <h2 class="section-title">Trusted by Growers Globally</h2>
+      </div>
+
+      <div class="testimonials-slider reveal">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card active">
+          <p class="test-quote">
+            "By offloading our soil diagnostic models onto Stackly's edge clusters, we lowered our sensor processing latency from 6 seconds to under 12 milliseconds. Our water efficiency immediately increased by 22%."
+          </p>
+          <div class="test-user">
+            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=150&q=80&fm=webp" alt="Grower avatar" class="test-avatar">
+            <span class="test-name">Elena Rostova</span>
+            <span class="test-role">Operations VP, AgriCorp Global</span>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <p class="test-quote">
+            "Running multi-spectral drone stitching APIs on Stackly has simplified our vertical greenhouse operations. The carbon-negative computation pipeline fits perfectly with our clean environmental mission."
+          </p>
+          <div class="test-user">
+            <img src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&w=150&q=80&fm=webp" alt="Agronomist avatar" class="test-avatar">
+            <span class="test-name">Marcus Vance</span>
+            <span class="test-role">Director of Smart Farm Tech, NetherLabs</span>
+          </div>
+        </div>
+
+        <!-- Dots -->
+        <div class="slider-dots">
+          <div class="slider-dot active"></div>
+          <div class="slider-dot"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 9: FAQ
+  ========================================================================== -->
+  <section class="faq" id="faq-section">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-tag"><i class="fa-solid fa-circle-question"></i> FAQ</span>
+        <h2 class="section-title">Common Questions</h2>
+      </div>
+
+      <div class="faq-accordion reveal">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <span class="faq-question">How are Stackly's data centers powered?</span>
+            <div class="faq-toggle"><i class="fa-solid fa-plus"></i></div>
+          </div>
+          <div class="faq-body">
+            <div class="faq-answer">
+              Every regional node is integrated directly within local wind or solar farm grids. We use dynamic compute offloading to adjust computational intensities during power generation surpluses, making our calculations carbon-neutral.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <span class="faq-question">What sensors are compatible with your API?</span>
+            <div class="faq-toggle"><i class="fa-solid fa-plus"></i></div>
+          </div>
+          <div class="faq-body">
+            <div class="faq-answer">
+              Our edge nodes accept any MQTT or HTTP payload structures. We supply pre-written SDK libraries for Python, C++, and Javascript nodes, allowing you to establish telemetry tunnels within seconds.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <span class="faq-question">Is telemetry stored securely on your server arrays?</span>
+            <div class="faq-toggle"><i class="fa-solid fa-plus"></i></div>
+          </div>
+          <div class="faq-body">
+            <div class="faq-answer">
+              Yes. All sensor data is encrypted at rest using AES-256 standard and in transit via TLS 1.3 tunnels. Database replication is distributed across independent geographic nodes to guarantee protection from failure.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+  ========================================================================== -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <i class="fa-solid fa-layer-group"></i>
+          <span>Stackly</span>
+        </a>
+        <p>
+          Digitizing the world's crops through low-latency telemetry databases and carbon-neutral server infrastructure.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="social-link"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-nav-col">
+        <h4>Solutions</h4>
+        <ul class="footer-links">
+          <li><a href="services.html" class="footer-link">Precision Compute</a></li>
+          <li><a href="services.html" class="footer-link">Drone APIs</a></li>
+          <li><a href="services.html" class="footer-link">Data Warehousing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav-col">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html" class="footer-link">About Us</a></li>
+          <li><a href="blog.html" class="footer-link">Latest Blog</a></li>
+          <li><a href="contact.html" class="footer-link">Contact Support</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>Agri-Cloud Insights</h4>
+        <p>Subscribe to receive system announcements and agritech research summaries.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault()">
+          <input type="email" placeholder="Enter email address" required>
+          <button class="btn btn-primary" style="padding:0.75rem;"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>&copy; 2026 Stackly Agri-Cloud Technologies Inc. All rights reserved.</span>
+      <span>Privacy Policy &nbsp;|&nbsp; Terms of Service</span>
+    </div>
+  </footer>
+
+  <!-- Core Javascript -->
+  <script src="main.js"></script>
+
+</body>
+</html>

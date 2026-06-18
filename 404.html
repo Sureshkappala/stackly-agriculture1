@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stackly Agri-Cloud - Page Not Found">
+  <title>404 | Stackly Agri-Cloud</title>
+  
+  <!-- Core Styles -->
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="error-page-wrapper">
+
+  <!-- Radial Background Glows -->
+  <div class="bg-radial-gradient"></div>
+  <canvas id="bg-canvas"></canvas>
+
+  <div class="container">
+    <div class="card-glass error-card mx-auto reveal active">
+      <div class="error-code">404</div>
+      <h1 class="error-title font-title">Operational Anomaly Detected</h1>
+      <p class="error-text">
+        The database query or farm telemetry grid section you are attempting to access is currently offline or does not exist in our global agricultural data hosting network.
+      </p>
+      
+      <div class="error-actions">
+        <!-- Go Back button triggers history.back() -->
+        <button onclick="window.history.back()" class="btn btn-secondary" id="go-back-btn">
+          <i class="fa-solid fa-arrow-left"></i> Go Back
+        </button>
+        <!-- Back to Home links directly to index.html -->
+        <a href="index.html" class="btn btn-primary" id="back-home-btn">
+          <i class="fa-solid fa-house"></i> Back to Home
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared Script -->
+  <script src="main.js"></script>
+
+</body>
+</html>

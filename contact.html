@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Stackly Agri-Cloud - Get in touch with our smart farming support engineers.">
+  <title>Contact Us | Stackly Agri-Cloud</title>
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Radial Background & Canvas Particles -->
+  <div class="bg-radial-gradient"></div>
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ==========================================================================
+       NAVBAR
+  ========================================================================== -->
+  <header class="header-nav">
+    <div class="container nav-container">
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-layer-group"></i>
+        <span>Stackly</span>
+      </a>
+
+      <!-- Hamburger Menu Toggle (Mobile) -->
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Menu Drawer -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+        <div class="nav-buttons">
+          <a href="login.html" class="btn btn-secondary">Login</a>
+          <a href="register.html" class="btn btn-primary">Get Started</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       SECTION 1: CONTACT BANNER
+  ========================================================================== -->
+  <section class="page-banner">
+    <div class="container reveal">
+      <span class="section-tag"><i class="fa-solid fa-headset"></i> COMMUNICATIONS</span>
+      <h1 class="section-title">Connect with Our <br><span class="gradient-text">Agronomy Engineers</span></h1>
+      <p class="section-desc mx-auto">
+        Have questions about solar micro-grid server configurations or setting up soil sensor database connections? Our specialists are available.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: CONTACT FORM & INFRA DETAILS
+  ========================================================================== -->
+  <section class="contact-section" style="background: rgba(5,8,15,0.4);">
+    <div class="container contact-grid">
+      <!-- Info Left -->
+      <div class="contact-info reveal">
+        <h3 class="font-title" style="font-size:1.6rem; margin-bottom:1rem;">Technical Support Center</h3>
+        <p style="color:var(--text-muted); font-size:0.95rem;">
+          Our network engineering team handles server uptime, cluster setups, and developer API allocations 24 hours a day, Monday through Friday.
+        </p>
+
+        <div class="contact-info-list">
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-info-text">
+              <h4>Email Inquiries</h4>
+              <p>support@stackly-agri.com</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-info-text">
+              <h4>Hotline Center</h4>
+              <p>+1 (800) 555-AGRI (2474)</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="contact-info-text">
+              <h4>Support Hours</h4>
+              <p>24/5 Live Chat Support & System Engineering</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ticket Form Right -->
+      <div class="card-glass reveal">
+        <h3 class="font-title" style="font-size:1.4rem; margin-bottom:1.5rem;"><i class="fa-solid fa-ticket"></i> Open a Telemetry Support Ticket</h3>
+        <form id="contact-form" onsubmit="event.preventDefault(); document.getElementById('contact-success-modal').classList.add('active');">
+          <div class="form-group">
+            <label class="form-label" for="contact-name">Full Name</label>
+            <div class="input-wrapper">
+              <i class="fa-solid fa-user input-icon"></i>
+              <input type="text" id="contact-name" class="form-input" placeholder="Sarah Miller" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contact-email">Business Email</label>
+            <div class="input-wrapper">
+              <i class="fa-solid fa-envelope input-icon"></i>
+              <input type="email" id="contact-email" class="form-input" placeholder="sarah@agrocorp.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contact-subject">Inquiry Subject</label>
+            <select id="contact-subject" class="form-select" required style="padding-left: 2.75rem;">
+              <option value="" disabled selected>Select an option</option>
+              <option value="sensor">Soil Node Setup & API Tunnels</option>
+              <option value="data">Agri-Data Center Cooling SLA</option>
+              <option value="billing">Enterprise Pricing & Cluster Allocations</option>
+              <option value="other">General System Questions</option>
+            </select>
+            <i class="fa-solid fa-circle-info input-icon" style="position:absolute; top:2.8rem;"></i>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contact-message">Detailed Message</label>
+            <textarea id="contact-message" class="form-input form-input-noicon" rows="4" placeholder="Briefly describe your hardware nodes or query parameters..." required style="resize:none; padding-left:1rem;"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit-btn">Send Support Request <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: OFFICE LOCATIONS
+  ========================================================================== -->
+  <section class="offices">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-tag"><i class="fa-solid fa-city"></i> LOCATIONS</span>
+        <h2 class="section-title">Our International Offices</h2>
+      </div>
+
+      <div class="solutions-grid">
+        <!-- Office 1 -->
+        <div class="card-glass reveal">
+          <h3 class="solution-title font-title" style="color:var(--primary);"><i class="fa-solid fa-map-location-dot"></i> San Francisco</h3>
+          <p class="solution-desc" style="font-size:0.9rem; line-height:1.7;">
+            <strong>Headquarters & Software Dev</strong><br>
+            600 Agri-Cloud Boulevard, Suite 400<br>
+            San Francisco, CA 94107, USA<br>
+            <span style="color:var(--text-muted);">sf@stackly-agri.com</span>
+          </p>
+        </div>
+
+        <!-- Office 2 -->
+        <div class="card-glass reveal">
+          <h3 class="solution-title font-title" style="color:var(--secondary);"><i class="fa-solid fa-map-location-dot"></i> Amsterdam</h3>
+          <p class="solution-desc" style="font-size:0.9rem; line-height:1.7;">
+            <strong>European Logistics & Greenhouses</strong><br>
+            Greenport Tech Hub, Unit 88<br>
+            2678 CX Naaldwijk, Netherlands<br>
+            <span style="color:var(--text-muted);">nl@stackly-agri.com</span>
+          </p>
+        </div>
+
+        <!-- Office 3 -->
+        <div class="card-glass reveal">
+          <h3 class="solution-title font-title" style="color:var(--accent);"><i class="fa-solid fa-map-location-dot"></i> Tokyo</h3>
+          <p class="solution-desc" style="font-size:0.9rem; line-height:1.7;">
+            <strong>Asia Edge Compute Logistics</strong><br>
+            Smart Agrigrid Building, Floor 14<br>
+            Chiyoda-ku, Tokyo 100-0005, Japan<br>
+            <span style="color:var(--text-muted);">tokyo@stackly-agri.com</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: TROUBLESHOOTING QUICK LINKS
+  ========================================================================== -->
+  <section class="troubleshooting" style="background: rgba(5,8,15,0.4);">
+    <div class="container reveal">
+      <div class="card-glass text-center" style="max-width:850px; margin:0 auto; padding:4rem 2rem;">
+        <span class="section-tag"><i class="fa-solid fa-circle-exclamation"></i> QUICK HELP</span>
+        <h2 class="font-title" style="margin-bottom:1.5rem;">Looking for Immediate Answers?</h2>
+        <p style="color:var(--text-muted); max-width:550px; margin:0 auto 2.5rem auto;">
+          Check our live system statuses or browse code databases before opening a support ticket.
+        </p>
+        <div class="error-actions" style="flex-wrap:wrap; gap:1.25rem;">
+          <button class="btn btn-secondary"><i class="fa-solid fa-chart-simple"></i> System Status Node</button>
+          <button class="btn btn-secondary"><i class="fa-solid fa-book"></i> Read Documentation</button>
+          <button class="btn btn-secondary"><i class="fa-solid fa-circle-nodes"></i> API Status Grid</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+  ========================================================================== -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <i class="fa-solid fa-layer-group"></i>
+          <span>Stackly</span>
+        </a>
+        <p>
+          Digitizing the world's crops through low-latency telemetry databases and carbon-neutral server infrastructure.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="social-link"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-nav-col">
+        <h4>Solutions</h4>
+        <ul class="footer-links">
+          <li><a href="services.html" class="footer-link">Precision Compute</a></li>
+          <li><a href="services.html" class="footer-link">Drone APIs</a></li>
+          <li><a href="services.html" class="footer-link">Data Warehousing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav-col">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html" class="footer-link">About Us</a></li>
+          <li><a href="blog.html" class="footer-link">Latest Blog</a></li>
+          <li><a href="contact.html" class="footer-link">Contact Support</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>Agri-Cloud Insights</h4>
+        <p>Subscribe to receive system announcements and agritech research summaries.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault()">
+          <input type="email" placeholder="Enter email address" required>
+          <button class="btn btn-primary" style="padding:0.75rem;"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>&copy; 2026 Stackly Agri-Cloud Technologies Inc. All rights reserved.</span>
+      <span>Privacy Policy &nbsp;|&nbsp; Terms of Service</span>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       CONTACT SUCCESS MODAL
+  ========================================================================== -->
+  <div class="modal-overlay" id="contact-success-modal">
+    <div class="modal-box">
+      <div class="modal-icon"><i class="fa-solid fa-check"></i></div>
+      <h3 class="font-title">Support Ticket Created</h3>
+      <p>
+        Your agricultural database inquiry has been recorded. Our system integration engineers will review your request and contact you via email shortly.
+      </p>
+      <button onclick="document.getElementById('contact-success-modal').classList.remove('active'); document.getElementById('contact-form').reset();" class="btn btn-primary" style="width:100%;">Acknowledge</button>
+    </div>
+  </div>
+
+  <!-- Core Javascript -->
+  <script src="main.js"></script>
+
+</body>
+</html>

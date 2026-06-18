@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stackly Agri-Cloud - User Telemetry Dashboard">
+  <title>User Dashboard | Stackly Agri-Cloud</title>
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dash-layout">
+
+  <!-- Radial Background Glow -->
+  <div class="bg-radial-gradient"></div>
+
+  <!-- ==========================================================================
+       SIDEBAR NAVIGATION
+  ========================================================================== -->
+  <aside class="dash-sidebar">
+    <!-- Brand Logo -->
+    <div class="logo dash-logo">
+      <i class="fa-solid fa-layer-group"></i>
+      <span>Stackly</span>
+    </div>
+
+    <!-- User Information Card -->
+    <div class="dash-user-info" style="margin-bottom: 2.5rem; background: rgba(255,255,255,0.02); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-color);">
+      <img src="https://images.unsplash.com/photo-1534067783941-51c9c23eccfd?auto=format&fit=crop&w=80&q=80&fm=webp" alt="User profile avatar" class="dash-user-avatar">
+      <div>
+        <h4 style="font-size:0.95rem; font-weight:600;">Farmer Node #4</h4>
+        <span style="font-size:0.75rem; color:var(--primary);"><i class="fa-solid fa-circle" style="font-size:0.5rem;"></i> Active Client</span>
+      </div>
+    </div>
+
+    <!-- Sidebar Menus -->
+    <ul class="dash-menu-list">
+      <li>
+        <a href="#" class="dash-menu-item-link active">
+          <i class="fa-solid fa-chart-line"></i> Field Telemetry
+        </a>
+      </li>
+      <li>
+        <a href="#" class="dash-menu-item-link">
+          <i class="fa-solid fa-droplet"></i> Irrigation Sync
+        </a>
+      </li>
+      <li>
+        <a href="#" class="dash-menu-item-link">
+          <i class="fa-solid fa-helicopter"></i> Drone Flights
+        </a>
+      </li>
+      <li>
+        <a href="#" class="dash-menu-item-link">
+          <i class="fa-solid fa-sliders"></i> Sensor Calibrations
+        </a>
+      </li>
+    </ul>
+
+    <!-- Logout Button (Redirects to index.html) -->
+    <a href="index.html" class="btn btn-secondary dash-logout-btn" id="logout-btn">
+      <i class="fa-solid fa-right-from-bracket"></i> Logout
+    </a>
+  </aside>
+
+  <!-- ==========================================================================
+       MAIN CONTENT CONTAINER
+  ========================================================================== -->
+  <main class="dash-main">
+    <header class="dash-header">
+      <div>
+        <h1 class="font-title" style="font-size: 1.75rem; margin-bottom: 0.25rem;">Grower Analytics Control</h1>
+        <p style="color:var(--text-muted); font-size:0.9rem;">Real-time soil metrics & node statuses</p>
+      </div>
+      <div style="font-size:0.9rem; color:var(--text-muted);">
+        <i class="fa-solid fa-calendar-days"></i> Session Active: <span style="color:var(--text-main); font-weight:500;">June 18, 2026</span>
+      </div>
+    </header>
+
+    <!-- Metrics Grid -->
+    <div class="dash-grid-metrics">
+      <!-- Card 1 -->
+      <div class="dash-metric-box">
+        <div class="dash-metric-title">Soil Moisture</div>
+        <div class="dash-metric-number gradient-text">64.2%</div>
+        <div class="dash-metric-trend up"><i class="fa-solid fa-arrow-trend-up"></i> +2.4% (Optimal)</div>
+      </div>
+      <!-- Card 2 -->
+      <div class="dash-metric-box">
+        <div class="dash-metric-title">Ground Temp</div>
+        <div class="dash-metric-number gradient-text-alt">22.4 &deg;C</div>
+        <div class="dash-metric-trend down"><i class="fa-solid fa-arrow-trend-down"></i> -1.2 &deg;C (Stable)</div>
+      </div>
+      <!-- Card 3 -->
+      <div class="dash-metric-box">
+        <div class="dash-metric-title">Soluble Nitrogen</div>
+        <div class="dash-metric-number">78 ppm</div>
+        <div class="dash-metric-trend up"><i class="fa-solid fa-arrow-trend-up"></i> +5 ppm (Healthy)</div>
+      </div>
+      <!-- Card 4 -->
+      <div class="dash-metric-box">
+        <div class="dash-metric-title">Telemetry Ping</div>
+        <div class="dash-metric-number" style="color:var(--secondary);">6 ms</div>
+        <div class="dash-metric-trend up"><i class="fa-solid fa-check"></i> Connection Solid</div>
+      </div>
+    </div>
+
+    <!-- Details Panels -->
+    <div class="dash-panel-grid">
+      <!-- Active telemetry line chart -->
+      <div class="dash-panel-box">
+        <h3 class="font-title"><i class="fa-solid fa-wave-square" style="color:var(--primary)"></i> Transpiration Yield Telemetry (24h)</h3>
+        
+        <div class="dash-chart-panel" style="background:none; border:none; padding:0;">
+          <svg viewBox="0 0 500 150" class="dash-chart-svg" style="height:250px;">
+            <defs>
+              <linearGradient id="user-chart-grad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="var(--primary)" stop-opacity="0.25"></stop>
+                <stop offset="100%" stop-color="var(--primary)" stop-opacity="0.01"></stop>
+              </linearGradient>
+            </defs>
+            <line x1="0" y1="30" x2="500" y2="30" stroke="rgba(255,255,255,0.03)" stroke-width="1"></line>
+            <line x1="0" y1="75" x2="500" y2="75" stroke="rgba(255,255,255,0.03)" stroke-width="1"></line>
+            <line x1="0" y1="120" x2="500" y2="120" stroke="rgba(255,255,255,0.03)" stroke-width="1"></line>
+            
+            <path d="M 0 100 C 75 70, 150 130, 225 60 C 300 110, 375 40, 500 80 L 500 150 L 0 150 Z" fill="url(#user-chart-grad)"></path>
+            <path d="M 0 100 C 75 70, 150 130, 225 60 C 300 110, 375 40, 500 80" fill="none" stroke="var(--primary)" stroke-width="2.5"></path>
+            <circle cx="225" cy="60" r="4" fill="var(--primary)"></circle>
+            <circle cx="225" cy="60" r="8" fill="none" stroke="var(--primary)" stroke-width="1" opacity="0.6"></circle>
+          </svg>
+        </div>
+
+        <div style="margin-top:2rem; display:flex; gap:1rem; justify-content:flex-end;">
+          <button class="btn btn-secondary">Export Excel Report</button>
+          <button class="btn btn-primary">Sync Database</button>
+        </div>
+      </div>
+
+      <!-- Action items list -->
+      <div class="dash-panel-box">
+        <h3 class="font-title"><i class="fa-solid fa-list-check" style="color:var(--secondary)"></i> Manual Controls</h3>
+        <p style="color:var(--text-muted); font-size:0.85rem; margin-bottom:1.5rem;">
+          Trigger specific hardware nodes or calibration runs.
+        </p>
+
+        <div style="display:flex; flex-direction:column; gap:1rem;">
+          <button class="btn btn-secondary" style="justify-content:flex-start; padding:1rem;"><i class="fa-solid fa-droplet"></i> Run Irrigation Sync</button>
+          <button class="btn btn-secondary" style="justify-content:flex-start; padding:1rem;"><i class="fa-solid fa-gear"></i> Calibrate NPK Sensors</button>
+          <button class="btn btn-secondary" style="justify-content:flex-start; padding:1rem;"><i class="fa-solid fa-satellite"></i> Recalculate NDVI Map</button>
+          <button class="btn btn-secondary" style="justify-content:flex-start; padding:1rem;"><i class="fa-solid fa-rotate-left"></i> Rollback Node Firmware</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Shared Actions Parser -->
+  <script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stackly Agri-Cloud - Our journey, team of engineers, and environmental commitment.">
+  <title>About Us | Stackly Agri-Cloud</title>
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Radial Background & Canvas Particles -->
+  <div class="bg-radial-gradient"></div>
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ==========================================================================
+       NAVBAR
+  ========================================================================== -->
+  <header class="header-nav">
+    <div class="container nav-container">
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-layer-group"></i>
+        <span>Stackly</span>
+      </a>
+
+      <!-- Hamburger Menu Toggle (Mobile) -->
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Menu Drawer -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-buttons">
+          <a href="login.html" class="btn btn-secondary">Login</a>
+          <a href="register.html" class="btn btn-primary">Get Started</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       SECTION 1: PAGE BANNER
+  ========================================================================== -->
+  <section class="page-banner">
+    <div class="container reveal">
+      <span class="section-tag"><i class="fa-solid fa-people-group"></i> OUR MISSION</span>
+      <h1 class="section-title">Bridging the Gap Between <br><span class="gradient-text">Agronomy</span> & Server Architecture</h1>
+      <p class="section-desc mx-auto">
+        Stackly was founded by a cooperative of software engineers and agronomists determined to create standard tools for the farming tech revolution.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: OUR STORY (TIMELINE)
+  ========================================================================== -->
+  <section class="our-story" style="background: rgba(5,8,15,0.4);">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-tag"><i class="fa-solid fa-timeline"></i> TIMELINE</span>
+        <h2 class="section-title">The Evolution of Agri-Cloud</h2>
+      </div>
+
+      <div class="timeline">
+        <!-- Item 1 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">2020</div>
+            <h4 class="font-title">Founding & Seed Funding</h4>
+            <p style="color:var(--text-muted); font-size:0.9rem;">
+              Stackly launches its first pilot project in California, coordinating real-time water metrics for 2,000 hectares of vineyards.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">2022</div>
+            <h4 class="font-title">Global Network Expansion</h4>
+            <p style="color:var(--text-muted); font-size:0.9rem;">
+              We deploy regional data nodes in Europe (Netherlands) and Oceania (Australia) to serve international precision growers.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">2024</div>
+            <h4 class="font-title">Green Grid Migration</h4>
+            <p style="color:var(--text-muted); font-size:0.9rem;">
+              Transitioned 100% of server computations to solar-powered microgrids co-located next to automated agricultural fields.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">2026</div>
+            <h4 class="font-title">Agri-Cloud Edge Integration</h4>
+            <p style="color:var(--text-muted); font-size:0.9rem;">
+              Unveiled next-gen low-latency telemetry databases supporting sub-millisecond offline syncing for autonomous machinery.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: CORE PHILOSOPHY
+  ========================================================================== -->
+  <section class="philosophy">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-tag"><i class="fa-solid fa-heart"></i> PHILOSOPHY</span>
+        <h2 class="section-title">Our Operational Standards</h2>
+        <p class="section-desc mx-auto">
+          We operate with absolute transparency and commitment to sustainability.
+        </p>
+      </div>
+
+      <div class="solutions-grid">
+        <div class="card-glass reveal">
+          <div class="solution-icon"><i class="fa-solid fa-eye"></i></div>
+          <h3 class="solution-title font-title">Total Openness</h3>
+          <p class="solution-desc">
+            We provide open access monitoring tools for all computing resource usages, keeping growers in control.
+          </p>
+        </div>
+
+        <div class="card-glass reveal">
+          <div class="solution-icon"><i class="fa-solid fa-bolt"></i></div>
+          <h3 class="solution-title font-title">Zero Carbon Waste</h3>
+          <p class="solution-desc">
+            Our data center systems run dynamically, matching hardware load to surrounding solar and wind energy output levels.
+          </p>
+        </div>
+
+        <div class="card-glass reveal">
+          <div class="solution-icon"><i class="fa-solid fa-code"></i></div>
+          <h3 class="solution-title font-title">Developer Accessibility</h3>
+          <p class="solution-desc">
+            Sleek APIs, detailed documentation, and accessible SDKs let users build their own custom crop tracking solutions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: ENGINEERING TEAM
+  ========================================================================== -->
+  <section class="team" style="background: rgba(5,8,15,0.4);">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-tag"><i class="fa-solid fa-user-gear"></i> MEET THE TEAM</span>
+        <h2 class="section-title">The Agronomy Tech Specialists</h2>
+        <p class="section-desc mx-auto">
+          Our diverse engineering group balances hardware design, low-latency code, and crop science.
+        </p>
+      </div>
+
+      <div class="team-grid">
+        <!-- Member 1 -->
+        <div class="team-card card-glass reveal">
+          <div class="team-avatar-wrapper">
+            <img src="https://images.unsplash.com/photo-1534067783941-51c9c23eccfd?auto=format&fit=crop&w=300&q=80&fm=webp" alt="CEO Avatar" loading="lazy">
+          </div>
+          <h4 class="font-title">Sarah Jenkins</h4>
+          <p style="color:var(--primary); font-size:0.85rem; margin-bottom:0.5rem;">Co-Founder & CEO</p>
+          <p style="color:var(--text-muted); font-size:0.8rem;">Former lead systems architect at Google Cloud.</p>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="team-card card-glass reveal">
+          <div class="team-avatar-wrapper">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=300&q=80&fm=webp" alt="CTO Avatar" loading="lazy">
+          </div>
+          <h4 class="font-title">Dr. David Chen</h4>
+          <p style="color:var(--primary); font-size:0.85rem; margin-bottom:0.5rem;">Chief Agronomist</p>
+          <p style="color:var(--text-muted); font-size:0.8rem;">12+ years of researcher in precision irrigation models.</p>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="team-card card-glass reveal">
+          <div class="team-avatar-wrapper">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80&fm=webp" alt="Lead Architect Avatar" loading="lazy">
+          </div>
+          <h4 class="font-title">Alisha K.</h4>
+          <p style="color:var(--primary); font-size:0.85rem; margin-bottom:0.5rem;">Lead Edge Architect</p>
+          <p style="color:var(--text-muted); font-size:0.8rem;">Builds Stackly's sub-millisecond database syncing structures.</p>
+        </div>
+
+        <!-- Member 4 -->
+        <div class="team-card card-glass reveal">
+          <div class="team-avatar-wrapper">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=300&q=80&fm=webp" alt="Infrastructure VP Avatar" loading="lazy">
+          </div>
+          <h4 class="font-title">Jared Miller</h4>
+          <p style="color:var(--primary); font-size:0.85rem; margin-bottom:0.5rem;">VP Infrastructure</p>
+          <p style="color:var(--text-muted); font-size:0.8rem;">Manages rural micro-grids and solar-powered data nodes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: GREEN ENERGY COMMITMENT
+  ========================================================================== -->
+  <section class="green-commitment">
+    <div class="container dc-grid">
+      <div class="dc-visual reveal">
+        <div class="card-glass" style="padding:3rem; border-color:var(--primary);">
+          <div style="font-size:3.5rem; color:var(--primary); margin-bottom:1rem;"><i class="fa-solid fa-solar-panel"></i></div>
+          <h3 class="font-title" style="margin-bottom:1rem;">100% Renewable Compute</h3>
+          <p style="color:var(--text-muted); font-size:0.95rem; margin-bottom:1.5rem;">
+            Every Soil Telemetry database query and crop diagnostic calculation is offset by solar farms that generate surplus clean energy back to local rural communities.
+          </p>
+          <button class="btn btn-primary">Download Green SLA PDF</button>
+        </div>
+      </div>
+      <div class="dc-info reveal">
+        <span class="section-tag"><i class="fa-solid fa-leaf"></i> SUSTAINABILITY</span>
+        <h2 class="section-title">Zero Net-Carbon Farming Cloud</h2>
+        <p>
+          Unlike legacy cloud systems that place massive thermal loads on regional power systems, Stackly data nodes are designed to exist in symbiosis with local farmlands.
+        </p>
+        <p style="color:var(--text-muted); margin-top:1rem;">
+          By co-locating servers next to crop nurseries and utilizing automated greenhouse cooling vents, we utilize waste heat to nourish local crop yields.
+        </p>
+        <button class="btn btn-secondary" style="margin-top:2rem;">Explore Environmental Data</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+  ========================================================================== -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <i class="fa-solid fa-layer-group"></i>
+          <span>Stackly</span>
+        </a>
+        <p>
+          Digitizing the world's crops through low-latency telemetry databases and carbon-neutral server infrastructure.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="social-link"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-nav-col">
+        <h4>Solutions</h4>
+        <ul class="footer-links">
+          <li><a href="services.html" class="footer-link">Precision Compute</a></li>
+          <li><a href="services.html" class="footer-link">Drone APIs</a></li>
+          <li><a href="services.html" class="footer-link">Data Warehousing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav-col">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html" class="footer-link">About Us</a></li>
+          <li><a href="blog.html" class="footer-link">Latest Blog</a></li>
+          <li><a href="contact.html" class="footer-link">Contact Support</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>Agri-Cloud Insights</h4>
+        <p>Subscribe to receive system announcements and agritech research summaries.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault()">
+          <input type="email" placeholder="Enter email address" required>
+          <button class="btn btn-primary" style="padding:0.75rem;"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>&copy; 2026 Stackly Agri-Cloud Technologies Inc. All rights reserved.</span>
+      <span>Privacy Policy &nbsp;|&nbsp; Terms of Service</span>
+    </div>
+  </footer>
+
+  <!-- Core Javascript -->
+  <script src="main.js"></script>
+
+</body>
+</html>

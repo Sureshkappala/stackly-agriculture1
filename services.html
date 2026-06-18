@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stackly Agri-Cloud - Our precision agricultural compute, API integrations, and SLA pricing models.">
+  <title>Services | Stackly Agri-Cloud</title>
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Radial Background & Canvas Particles -->
+  <div class="bg-radial-gradient"></div>
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ==========================================================================
+       NAVBAR
+  ========================================================================== -->
+  <header class="header-nav">
+    <div class="container nav-container">
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-layer-group"></i>
+        <span>Stackly</span>
+      </a>
+
+      <!-- Hamburger Menu Toggle (Mobile) -->
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Menu Drawer -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link active">Services</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-buttons">
+          <a href="login.html" class="btn btn-secondary">Login</a>
+          <a href="register.html" class="btn btn-primary">Get Started</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       SECTION 1: SERVICES HERO BANNER
+  ========================================================================== -->
+  <section class="page-banner">
+    <div class="container reveal">
+      <span class="section-tag"><i class="fa-solid fa-gears"></i> CAPABILITIES</span>
+      <h1 class="section-title">Developer-First <br><span class="gradient-text">Agronomy Computations</span></h1>
+      <p class="section-desc mx-auto">
+        Deploy secure soil databases, query crop NDVI telemetry, and automate irrigation clusters on our global low-latency network.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: SERVICE DETAILED: PRECISION FARMING CLOUD
+  ========================================================================== -->
+  <section class="service-detail-1" style="background: rgba(5,8,15,0.4);">
+    <div class="container dc-grid">
+      <div class="dc-info reveal">
+        <div class="solution-icon" style="background: rgba(0, 240, 128, 0.05); color: var(--primary);">
+          <i class="fa-solid fa-database"></i>
+        </div>
+        <h2 class="section-title">Precision Soil Databases</h2>
+        <p>
+          Store millions of soil moisture, NPK, and temperature data points per second. Our distributed time-series database is structured specifically for sensor telemetry, allowing instantaneous spatial queries.
+        </p>
+        <ul class="dc-features-list">
+          <li class="dc-feature-item">
+            <i class="fa-solid fa-microchip" style="color:var(--primary);"></i>
+            <div>
+              <h4>Sub-Millisecond Queries</h4>
+              <p>Fetch crop moisture histories in less than 5 milliseconds globally.</p>
+            </div>
+          </li>
+          <li class="dc-feature-item">
+            <i class="fa-solid fa-network-wired" style="color:var(--primary);"></i>
+            <div>
+              <h4>Automatic Edge Partitioning</h4>
+              <p>Data automatically shifts to the server node nearest to your physical farm grid.</p>
+            </div>
+          </li>
+        </ul>
+        <button class="btn btn-primary">Create Telemetry DB</button>
+      </div>
+      <div class="dc-visual reveal">
+        <div class="hero-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&w=800&q=80&fm=webp" alt="Data center servers blue lighting" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: SERVICE DETAILED: DRONE & SATELLITE API
+  ========================================================================== -->
+  <section class="service-detail-2">
+    <div class="container dc-grid">
+      <div class="dc-visual reveal">
+        <div class="hero-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&w=800&q=80&fm=webp" alt="Drone over green crops" loading="lazy">
+        </div>
+      </div>
+      <div class="dc-info reveal">
+        <div class="solution-icon" style="background: rgba(0, 180, 255, 0.05); color: var(--secondary);">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <h2 class="section-title">Drone & Satellite API Gateway</h2>
+        <p>
+          Process high-resolution visual inputs. Offload raw spectral image payloads onto our GPU grids. The Stackly imaging pipeline automatically rectifies coordinates and returns crop wellness indexes (NDVI) within minutes.
+        </p>
+        <ul class="dc-features-list">
+          <li class="dc-feature-item">
+            <i class="fa-solid fa-image" style="color:var(--secondary);"></i>
+            <div>
+              <h4>NDVI Reflectance Analysis</h4>
+              <p>Process plant stress data automatically using custom AI imaging models.</p>
+            </div>
+          </li>
+          <li class="dc-feature-item">
+            <i class="fa-solid fa-circle-nodes" style="color:var(--secondary);"></i>
+            <div>
+              <h4>Websocket Flight Tracking</h4>
+              <p>Receive real-time flight coordinate telemetry directly from autonomous drones.</p>
+            </div>
+          </li>
+        </ul>
+        <button class="btn btn-accent">Read API Reference</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: SERVICE DETAILED: ENTERPRISE SLA
+  ========================================================================== -->
+  <section class="service-detail-3" style="background: rgba(5,8,15,0.4);">
+    <div class="container dc-grid">
+      <div class="dc-info reveal">
+        <div class="solution-icon" style="background: rgba(139, 92, 246, 0.05); color: var(--accent);">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <h2 class="section-title">Enterprise Infrastructure Security</h2>
+        <p>
+          Protect agricultural control systems. We enforce zero-trust endpoint validation for all hardware units and autonomous irrigation networks.
+        </p>
+        <ul class="dc-features-list">
+          <li class="dc-feature-item">
+            <i class="fa-solid fa-lock" style="color:var(--accent);"></i>
+            <div>
+              <h4>Hardware Cryptographic Verification</h4>
+              <p>Each field IoT controller holds unique hardware keys to secure incoming data.</p>
+            </div>
+          </li>
+          <li class="dc-feature-item">
+            <i class="fa-solid fa-rotate" style="color:var(--accent);"></i>
+            <div>
+              <h4>Auto Failover Nodes</h4>
+              <p>Telemetry instantly routes to secondary nodes if a rural network goes offline.</p>
+            </div>
+          </li>
+        </ul>
+        <button class="btn btn-secondary">Review Security Model</button>
+      </div>
+      <div class="dc-visual reveal">
+        <div class="hero-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=800&q=80&fm=webp" alt="Futuristic secure network visualization" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: PRICING & PLANS
+  ========================================================================== -->
+  <section class="pricing" id="pricing-section">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-tag"><i class="fa-solid fa-tags"></i> PLANS</span>
+        <h2 class="section-title">Predictable Pricing for Any Scale</h2>
+        <p class="section-desc mx-auto">
+          Choose a server deployment level suited to your farming operations.
+        </p>
+      </div>
+
+      <!-- Billing Toggle -->
+      <div class="price-toggle-container reveal">
+        <span class="price-toggle-label active" id="toggle-monthly">Billed Monthly</span>
+        <div class="toggle-switch">
+          <div class="toggle-knob"></div>
+        </div>
+        <span class="price-toggle-label" id="toggle-annual">Billed Annually &nbsp;<span style="color:var(--primary); font-size:0.8rem;">(Save 20%)</span></span>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Hobbyist Plan -->
+        <div class="card-glass pricing-card reveal">
+          <div class="price-header">
+            <div class="price-plan">Hobbyist</div>
+            <div class="price-amount">$0</div>
+            <p style="color:var(--text-muted); font-size:0.85rem; margin-top:0.5rem;">For small experimental gardens.</p>
+          </div>
+          <button class="btn btn-secondary" style="width:100%;">Deploy Free Node</button>
+          <ul class="pricing-list">
+            <li class="pricing-list-item"><i class="fa-solid fa-circle-check"></i> Up to 50 IoT Soil Nodes</li>
+            <li class="pricing-list-item"><i class="fa-solid fa-circle-check"></i> Standard Query Latency</li>
+            <li class="pricing-list-item"><i class="fa-solid fa-circle-check"></i> Community Support</li>
+            <li class="pricing-list-item disabled"><i class="fa-solid fa-circle-xmark"></i> Drone Telemetry API</li>
+            <li class="pricing-list-item disabled"><i class="fa-solid fa-circle-xmark"></i> GPU Crop Forecasts</li>
+          </ul>
+        </div>
+
+        <!-- Professional Plan -->
+        <div class="card-glass pricing-card popular reveal">
+          <div class="pricing-badge">RECOMMENDED</div>
+          <div class="price-header">
+            <div class="price-plan" style="color:var(--primary);">Professional</div>
+            <div class="price-amount">$<span class="price-val" data-monthly="49" data-annual="39">49</span><span class="price-period" style="font-size:1.25rem;">/mo</span></div>
+            <p style="color:var(--text-muted); font-size:0.85rem; margin-top:0.5rem;">For commercial smart farms.</p>
+          </div>
+          <button class="btn btn-primary" style="width:100%;">Initialize Cluster</button>
+          <ul class="pricing-list">
+            <li class="pricing-list-item"><i class="fa-solid fa-circle-check"></i> Up to 5,000 IoT Soil Nodes</li>
+            <li class="pricing-list-item"><i class="fa-solid fa-circle-check"></i> Ultra Low-Latency Sync</li>
+            <li class="pricing-list-item"><i class="fa-solid fa-circle-check"></i> Full Drone Telemetry API</li>
+            <li class="pricing-list-item"><i class="fa-solid fa-circle-check"></i> daily NDVI Satellite Overlays</li>
+            <li class="pricing-list-item"><i class="fa-solid fa-circle-check"></i> 24/7 Server Monitoring</li>
+          </ul>
+        </div>
+
+        <!-- Enterprise Plan -->
+        <div class="card-glass pricing-card reveal">
+          <div class="price-header">
+            <div class="price-plan" style="color:var(--secondary);">Enterprise</div>
+            <div class="price-amount">$<span class="price-val" data-monthly="199" data-annual="159">199</span><span class="price-period" style="font-size:1.25rem;">/mo</span></div>
+            <p style="color:var(--text-muted); font-size:0.85rem; margin-top:0.5rem;">For multi-basin cooperatives.</p>
+          </div>
+          <button class="btn btn-accent" style="width:100%;">Contact Sales</button>
+          <ul class="pricing-list">
+            <li class="pricing-list-item"><i class="fa-solid fa-circle-check"></i> Unlimited IoT Sensor Nodes</li>
+            <li class="pricing-list-item"><i class="fa-solid fa-circle-check"></i> Custom Dedicated Edge Nodes</li>
+            <li class="pricing-list-item"><i class="fa-solid fa-circle-check"></i> Custom GPU Diagnostic Training</li>
+            <li class="pricing-list-item"><i class="fa-solid fa-circle-check"></i> 99.99% Uptime Guarantee SLA</li>
+            <li class="pricing-list-item"><i class="fa-solid fa-circle-check"></i> Phone Support & Integration Eng.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+  ========================================================================== -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <i class="fa-solid fa-layer-group"></i>
+          <span>Stackly</span>
+        </a>
+        <p>
+          Digitizing the world's crops through low-latency telemetry databases and carbon-neutral server infrastructure.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="social-link"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-nav-col">
+        <h4>Solutions</h4>
+        <ul class="footer-links">
+          <li><a href="services.html" class="footer-link">Precision Compute</a></li>
+          <li><a href="services.html" class="footer-link">Drone APIs</a></li>
+          <li><a href="services.html" class="footer-link">Data Warehousing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav-col">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html" class="footer-link">About Us</a></li>
+          <li><a href="blog.html" class="footer-link">Latest Blog</a></li>
+          <li><a href="contact.html" class="footer-link">Contact Support</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>Agri-Cloud Insights</h4>
+        <p>Subscribe to receive system announcements and agritech research summaries.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault()">
+          <input type="email" placeholder="Enter email address" required>
+          <button class="btn btn-primary" style="padding:0.75rem;"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>&copy; 2026 Stackly Agri-Cloud Technologies Inc. All rights reserved.</span>
+      <span>Privacy Policy &nbsp;|&nbsp; Terms of Service</span>
+    </div>
+  </footer>
+
+  <!-- Core Javascript -->
+  <script src="main.js"></script>
+
+</body>
+</html>
