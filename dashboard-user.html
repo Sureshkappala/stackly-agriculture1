@@ -20,7 +20,7 @@
   <!-- ==========================================================================
        SIDEBAR NAVIGATION
   ========================================================================== -->
-  <aside class="dash-sidebar">
+  <aside class="dash-sidebar" id="sidebar">
     <!-- Brand Logo -->
     <div class="logo dash-logo">
       <i class="fa-solid fa-layer-group"></i>
@@ -70,15 +70,23 @@
        MAIN CONTENT CONTAINER
   ========================================================================== -->
   <main class="dash-main">
-    <header class="dash-header">
-      <div>
-        <h1 class="font-title" style="font-size: 1.75rem; margin-bottom: 0.25rem;">Grower Analytics Control</h1>
-        <p style="color:var(--text-muted); font-size:0.9rem;">Real-time soil metrics & node statuses</p>
-      </div>
-      <div style="font-size:0.9rem; color:var(--text-muted);">
-        <i class="fa-solid fa-calendar-days"></i> Session Active: <span style="color:var(--text-main); font-weight:500;">June 18, 2026</span>
-      </div>
-    </header>
+  <header class="dash-header">
+
+    <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="header-content">
+        <h1 class="font-title">
+            Grower Analytics Control
+        </h1>
+
+        <p>
+            Real-time soil metrics & node statuses
+        </p>
+    </div>
+
+</header>
 
     <!-- Metrics Grid -->
     <div class="dash-grid-metrics">
@@ -155,6 +163,14 @@
       </div>
     </div>
   </main>
+  <script>
+const menuToggle = document.getElementById("menuToggle");
+const sidebar = document.getElementById("sidebar");
+
+menuToggle.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+});
+</script>
 
   <!-- Shared Actions Parser -->
   <script src="main.js"></script>

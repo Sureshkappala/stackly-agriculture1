@@ -394,7 +394,28 @@ function initUniversal404Router() {
 }
 window.onload = function () {
     setTimeout(function () {
-        document.getElementById("loader").style.display = "none";
+        const loader = document.getElementById("loader");
+
+        if(loader){
+            loader.style.display = "none";
+        }
     }, 1500);
 };
+
+const nameField = document.getElementById("contact-name");
+const mobileField = document.getElementById("contact-mobile");
+
+if(nameField){
+    nameField.addEventListener("input", function () {
+        this.value = this.value.replace(/[^A-Za-z ]/g, "");
+    });
+}
+
+if(mobileField){
+    mobileField.addEventListener("input", function () {
+        this.value = this.value.replace(/[^0-9]/g, "");
+    });
+}
+
+
 
