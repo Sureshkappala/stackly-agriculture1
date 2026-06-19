@@ -125,10 +125,13 @@
         </div>
 
         <!-- Submit -->
-        <button type="submit" class="btn btn-primary form-submit-btn" id="submit-btn" disabled>Create Telemetry Account</button>
-      </form>
+        <button type="submit" class="btn btn-primary form-submit-btn" id="submit-btn">
+    Create Telemetry Account
+</button>
 
-      <div class="form-footer">
+</form>
+
+<div class="form-footer">
         Already have a cluster node? <a href="login.html">Sign In</a>
       </div>
     </div>
@@ -147,180 +150,20 @@
       <button id="modal-ack-btn" class="btn btn-primary" style="width:100%;">Proceed to Login</button>
     </div>
   </div>
+  
 
   <!-- Form Validation Script -->
   <script>
-    const nameInput = document.getElementById('reg-name');
-    const mobileInput = document.getElementById('reg-mobile');
-    const emailInput = document.getElementById('reg-email');
-    const pwdInput = document.getElementById('reg-password');
-    const confirmInput = document.getElementById('reg-confirm');
-    const submitBtn = document.getElementById('submit-btn');
+document.getElementById('register-form').addEventListener('submit', function(e) {
+    e.preventDefault();
 
-    const nameHint = document.getElementById('name-hint');
-    const mobileHint = document.getElementById('mobile-hint');
-    const pwdRules = document.getElementById('pwd-rules');
-    const confirmHint = document.getElementById('confirm-hint');
+    document.getElementById('success-modal').classList.add('active');
+});
 
-    // Eye masks
-    const pwdToggle = document.getElementById('pwd-toggle');
-    const pwdToggleIcon = document.getElementById('pwd-toggle-icon');
-    const confirmToggle = document.getElementById('confirm-toggle');
-    const confirmToggleIcon = document.getElementById('confirm-toggle-icon');
-
-    pwdToggle.addEventListener('click', () => {
-      const isPwd = pwdInput.type === 'password';
-      pwdInput.type = isPwd ? 'text' : 'password';
-      pwdToggleIcon.className = isPwd ? 'fa-solid fa-eye' : 'fa-solid fa-eye-slash';
-    });
-
-    confirmToggle.addEventListener('click', () => {
-      const isPwd = confirmInput.type === 'password';
-      confirmInput.type = isPwd ? 'text' : 'password';
-      confirmToggleIcon.className = isPwd ? 'fa-solid fa-eye' : 'fa-solid fa-eye-slash';
-    });
-
-    // Password rule elements
-    const rLength = document.getElementById('rule-length');
-    const rUpper = document.getElementById('rule-upper');
-    const rLower = document.getElementById('rule-lower');
-    const rDigit = document.getElementById('rule-digit');
-    const rSpec = document.getElementById('rule-spec');
-
-    // Restrict name input to letters and spaces only
-    nameInput.addEventListener('keypress', (e) => {
-      const char = String.fromCharCode(e.which || e.keyCode);
-      if (!/^[A-Za-z\s]+$/.test(char)) {
-        e.preventDefault();
-      }
-    });
-
-    nameInput.addEventListener('input', () => {
-      // Clean characters just in case of copy-paste
-      nameInput.value = nameInput.value.replace(/[^A-Za-z\s]/g, '');
-      const isValid = nameInput.value.trim().length > 0;
-      nameHint.style.display = isValid ? 'none' : 'block';
-      validateForm();
-    });
-
-    // Restrict mobile input to numbers only
-    mobileInput.addEventListener('keypress', (e) => {
-      const char = String.fromCharCode(e.which || e.keyCode);
-      if (!/^[0-9]+$/.test(char)) {
-        e.preventDefault();
-      }
-    });
-
-    mobileInput.addEventListener('input', () => {
-      mobileInput.value = mobileInput.value.replace(/[^0-9]/g, '');
-      const isValid = mobileInput.value.length === 10;
-      mobileHint.style.display = isValid ? 'none' : 'block';
-      if (!isValid) {
-        mobileHint.classList.remove('valid');
-        mobileHint.classList.add('invalid');
-      } else {
-        mobileHint.classList.remove('invalid');
-        mobileHint.classList.add('valid');
-      }
-      validateForm();
-    });
-
-    pwdInput.addEventListener('focus', () => {
-      pwdRules.style.display = 'block';
-    });
-
-    pwdInput.addEventListener('input', () => {
-      validateForm();
-    });
-
-    confirmInput.addEventListener('input', () => {
-      validateForm();
-    });
-
-    emailInput.addEventListener('input', () => {
-      validateForm();
-    });
-
-    function validateForm() {
-      const name = nameInput.value.trim();
-      const mobile = mobileInput.value;
-      const email = emailInput.value;
-      const pwd = pwdInput.value;
-      const confirm = confirmInput.value;
-
-      // Name check
-      const isNameValid = name.length > 0 && /^[A-Za-z\s]+$/.test(name) && name.length <= 16;
-      
-      // Mobile check
-      const isMobileValid = /^\d{10}$/.test(mobile);
-
-      // Email check
-      const isEmailValid = emailInput.checkValidity() && email.includes('@');
-
-      // Password rules check
-      const hasLength = pwd.length >= 8;
-      const hasUpper = /[A-Z]/.test(pwd);
-      const hasLower = /[a-z]/.test(pwd);
-      const hasDigit = /[0-9]/.test(pwd);
-      const hasSpec = /[^A-Za-z0-9]/.test(pwd);
-
-      updateRuleState(rLength, hasLength);
-      updateRuleState(rUpper, hasUpper);
-      updateRuleState(rLower, hasLower);
-      updateRuleState(rDigit, hasDigit);
-      updateRuleState(rSpec, hasSpec);
-
-      const isPwdStrong = hasLength && hasUpper && hasLower && hasDigit && hasSpec;
-
-      // Confirm match check
-      const isMatch = pwd === confirm && confirm.length > 0;
-      if (confirm.length > 0) {
-        confirmHint.style.display = 'block';
-        if (isMatch) {
-          confirmHint.classList.remove('invalid');
-          confirmHint.classList.add('valid');
-          confirmHint.querySelector('i').className = 'fa-solid fa-circle-check';
-        } else {
-          confirmHint.classList.remove('valid');
-          confirmHint.classList.add('invalid');
-          confirmHint.querySelector('i').className = 'fa-solid fa-circle-dot';
-        }
-      } else {
-        confirmHint.style.display = 'none';
-      }
-
-      // Final aggregation
-      if (isNameValid && isMobileValid && isEmailValid && isPwdStrong && isMatch) {
-        submitBtn.disabled = false;
-      } else {
-        submitBtn.disabled = true;
-      }
-    }
-
-    function updateRuleState(element, isValid) {
-      if (isValid) {
-        element.classList.remove('invalid');
-        element.classList.add('valid');
-        element.querySelector('i').className = 'fa-solid fa-circle-check';
-      } else {
-        element.classList.remove('valid');
-        element.classList.add('invalid');
-        element.querySelector('i').className = 'fa-solid fa-circle-dot';
-      }
-    }
-
-    // Handle form submit
-    document.getElementById('register-form').addEventListener('submit', (e) => {
-      e.preventDefault();
-      // Open Success Modal
-      document.getElementById('success-modal').classList.add('active');
-    });
-
-    // Handle modal redirection ack
-    document.getElementById('modal-ack-btn').addEventListener('click', () => {
-      window.location.href = 'login.html';
-    });
-  </script>
+document.getElementById('modal-ack-btn').addEventListener('click', function() {
+    window.location.href = 'login.html';
+});
+</script>
 
   <!-- Shared Particles -->
   <script src="main.js"></script>

@@ -93,8 +93,9 @@
 </div>
 
         <!-- Submit Button -->
-        <button type="submit" class="btn btn-primary form-submit-btn" id="submit-btn" disabled>Authenticate Access</button>
-      </form>
+        <button type="submit" class="btn btn-primary form-submit-btn" id="submit-btn">
+    Authenticate Access
+</button>
 
       <div class="form-footer">
         Don't have a database account? <a href="register.html">Get Started</a>
@@ -103,92 +104,20 @@
   </main>
 
   <!-- Form Validation & Interactive Logic -->
-  <script>
-    const emailInput = document.getElementById('login-email');
-    const pwdInput = document.getElementById('login-password');
-    const roleSelect = document.getElementById('login-role');
-    const submitBtn = document.getElementById('submit-btn');
-    const pwdRules = document.getElementById('pwd-rules');
-    
-    // Toggle Password Visibility
-    const toggleBtn = document.getElementById('pwd-toggle');
-    const toggleIcon = document.getElementById('pwd-toggle-icon');
-    
-    toggleBtn.addEventListener('click', () => {
-      const isPwd = pwdInput.type === 'password';
-      pwdInput.type = isPwd ? 'text' : 'password';
-      toggleIcon.className = isPwd ? 'fa-solid fa-eye' : 'fa-solid fa-eye-slash';
-    });
+   <script>
+document.getElementById('login-form').addEventListener('submit', function(e) {
+    e.preventDefault();
 
-    // Password Validation Rules
-    const rLength = document.getElementById('rule-length');
-    const rUpper = document.getElementById('rule-upper');
-    const rLower = document.getElementById('rule-lower');
-    const rDigit = document.getElementById('rule-digit');
-    const rSpec = document.getElementById('rule-spec');
+    const role = document.getElementById('login-role').value;
 
-    pwdInput.addEventListener('focus', () => {
-      pwdRules.style.display = 'block';
-    });
-
-    pwdInput.addEventListener('input', validateForm);
-    emailInput.addEventListener('input', validateForm);
-    roleSelect.addEventListener('change', validateForm);
-
-    function validateForm() {
-      const pwd = pwdInput.value;
-      const email = emailInput.value;
-      const role = roleSelect.value;
-
-      // Check rules
-      const hasLength = pwd.length >= 8;
-      const hasUpper = /[A-Z]/.test(pwd);
-      const hasLower = /[a-z]/.test(pwd);
-      const hasDigit = /[0-9]/.test(pwd);
-      const hasSpec = /[^A-Za-z0-9]/.test(pwd);
-
-      updateRuleState(rLength, hasLength);
-      updateRuleState(rUpper, hasUpper);
-      updateRuleState(rLower, hasLower);
-      updateRuleState(rDigit, hasDigit);
-      updateRuleState(rSpec, hasSpec);
-
-      const isPwdStrong = hasLength && hasUpper && hasLower && hasDigit && hasSpec;
-      const isEmailValid = emailInput.checkValidity() && email.includes('@');
-      const isRoleSelected = role !== '';
-
-      if (isPwdStrong && isEmailValid && isRoleSelected) {
-        submitBtn.disabled = false;
-      } else {
-        submitBtn.disabled = true;
-      }
-    }
-
-    function updateRuleState(element, isValid) {
-      if (isValid) {
-        element.classList.remove('invalid');
-        element.classList.add('valid');
-        element.querySelector('i').className = 'fa-solid fa-circle-check';
-      } else {
-        element.classList.remove('valid');
-        element.classList.add('invalid');
-        element.querySelector('i').className = 'fa-solid fa-circle-dot';
-      }
-    }
-
-    // Submit Routing Logic
-    document.getElementById('login-form').addEventListener('submit', (e) => {
-      e.preventDefault();
-      
-      const selectedRole = roleSelect.value;
-      if (selectedRole === 'admin') {
+    if(role === 'admin'){
         window.location.href = 'dashboard-admin.html';
-      } else if (selectedRole === 'user') {
+    }else{
         window.location.href = 'dashboard-user.html';
-      }
-    });
-  </script>
-
+    }
+});
+</script>
+  
   <!-- Shared Particles -->
   <script src="main.js"></script>
 

@@ -2685,7 +2685,7 @@ background-clip: text;
     background:#07111f;
     z-index:9999;
     transition:0.4s ease;
-    overflow-y:auto;
+
 }
 
 .navbar-collapse.show{
@@ -2983,7 +2983,6 @@ background-clip: text;
     z-index:9999;
     padding:25px;
     transition:0.4s ease;
-    overflow-y:auto;
 }
 
 .mobile-menu.active{
@@ -3207,7 +3206,7 @@ background-clip: text;
         width:100% !important;
         right:-100% !important;
         padding:90px 30px !important;
-        overflow-y:auto;
+        
     }
 
     .nav-menu.active{
@@ -3275,7 +3274,6 @@ background-clip: text;
       padding:30px 25px;
       z-index:9999;
       transition:all .4s ease;
-      overflow-y:auto;
       border-left:1px solid rgba(255,255,255,.08);
       box-shadow:-10px 0 30px rgba(0,0,0,.5);
 
@@ -3412,4 +3410,161 @@ background-clip: text;
     width:26px;
     height:3px;
     margin:0;
+}
+/* Lock background when mobile menu is open */
+body.menu-open{
+    overflow: hidden;
+    height: 100vh;
+}
+@media (max-width:768px){
+
+  .nav-menu{
+      position:fixed;
+      top:0;
+      right:-100%;
+      width:320px;
+      height:100vh;
+
+        /* IMPORTANT */
+      padding:20px;
+      padding-bottom:120px;
+
+      -webkit-overflow-scrolling:touch;
+  }
+
+}
+.nav-links li{
+    margin:0;
+}
+
+.nav-links a{
+    padding:14px 0;
+    display:block;
+}
+
+.nav-buttons{
+    margin-top:20px;
+}
+.nav-menu{
+    padding: 15px 20px;
+}
+
+.nav-links li a{
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.nav-links li{
+    margin-bottom: 0;
+}
+
+.mobile-search{
+    margin-bottom: 15px;
+}
+
+.mobile-contact{
+    margin-top: 15px;
+}
+
+.mobile-contact h3{
+    margin-bottom: 10px;
+}
+
+.mobile-contact p{
+    margin: 4px 0;
+    font-size: 14px;
+}
+.mobile-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 9998;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.mobile-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+body.menu-open{
+    overflow: hidden;
+}
+.mobile-menu{
+    padding:15px;
+    overflow:hidden;
+}
+
+.mobile-search{
+    margin-bottom:15px;
+}
+
+.mobile-links li a{
+    padding:10px 0;
+    font-size:15px;
+}
+
+.mobile-links li{
+    margin:0;
+}
+
+.mobile-contact{
+    margin-top:15px;
+}
+
+.mobile-contact h3{
+    margin-bottom:8px;
+    font-size:18px;
+}
+
+.mobile-contact p{
+    margin:4px 0;
+    font-size:13px;
+}
+.nav-buttons{
+    margin-top:15px;
+}
+
+.nav-buttons .btn{
+    padding:10px;
+    margin-bottom:8px;
+}
+.mobile-menu{
+    height:100vh;
+    overflow:hidden;
+}
+.mobile-search{
+    margin-bottom:10px;
+}
+
+.mobile-links li a{
+    padding:8px 0;
+    font-size:14px;
+}
+
+.mobile-contact{
+    margin-top:10px;
+}
+
+.mobile-contact p{
+    margin:2px 0;
+    font-size:12px;
+}
+
+.nav-buttons{
+    margin-top:10px;
+}
+
+.nav-buttons .btn{
+    padding:8px;
+    margin-bottom:6px;
+}
+.mobile-menu{
+    height:100vh;
+    overflow-y:auto;
+    padding:15px;
 }
