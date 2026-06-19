@@ -232,11 +232,21 @@ function initTestimonialsSlider() {
   let autoplayTimer = startAutoplay();
 
   function showSlide(index) {
+    if(cards.length){
     cards.forEach(card => card.classList.remove('active'));
-    dots.forEach(dot => dot.classList.remove('active'));
+}
 
+if(dots.length){
+    dots.forEach(dot => dot.classList.remove('active'));
+}
+
+    if(cards[index]){
     cards[index].classList.add('active');
+}
+
+if(dots[index]){
     dots[index].classList.add('active');
+}
     currentIndex = index;
   }
 
@@ -416,6 +426,8 @@ if(mobileField){
         this.value = this.value.replace(/[^0-9]/g, "");
     });
 }
+
+
 
 
 
