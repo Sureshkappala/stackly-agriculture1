@@ -37,28 +37,23 @@
     </div>
 
     <!-- Sidebar Menus -->
-    <ul class="dash-menu-list">
-      <li>
-        <a href="#" class="dash-menu-item-link active">
-          <i class="fa-solid fa-chart-line"></i> Field Telemetry
-        </a>
-      </li>
-      <li>
-        <a href="#" class="dash-menu-item-link">
-          <i class="fa-solid fa-droplet"></i> Irrigation Sync
-        </a>
-      </li>
-      <li>
-        <a href="#" class="dash-menu-item-link">
-          <i class="fa-solid fa-helicopter"></i> Drone Flights
-        </a>
-      </li>
-      <li>
-        <a href="#" class="dash-menu-item-link">
-          <i class="fa-solid fa-sliders"></i> Sensor Calibrations
-        </a>
-      </li>
-    </ul>
+<ul class="dash-menu-list">
+
+  <li>
+    <a href="crop-analytics.html" class="dash-menu-item-link">
+      <i class="fa-solid fa-seedling"></i>
+      Crop Analytics
+    </a>
+  </li>
+
+  <li>
+    <a href="weather-monitoring.html" class="dash-menu-item-link">
+      <i class="fa-solid fa-cloud-sun"></i>
+      Weather Monitoring
+    </a>
+  </li>
+
+</ul>
 
     <!-- Logout Button (Redirects to index.html) -->
     <a href="index.html" class="btn btn-secondary dash-logout-btn" id="logout-btn">
@@ -115,6 +110,31 @@
         <div class="dash-metric-trend up"><i class="fa-solid fa-check"></i> Connection Solid</div>
       </div>
     </div>
+    <!-- Mobile Dashboard Modules -->
+
+<div id="crop-analytics" class="dash-panel-box">
+  <h3 class="font-title">
+    <i class="fa-solid fa-seedling" style="color:var(--primary)"></i>
+    Crop Analytics
+  </h3>
+
+  <p>🌱 Crop Health : 92%</p>
+  <p>🚜 Active Farms : 24</p>
+  <p>📈 Yield Prediction : High</p>
+  <p>💧 Water Efficiency : 88%</p>
+</div>
+
+<div id="weather-monitoring" class="dash-panel-box" style="margin-top:20px;">
+  <h3 class="font-title">
+    <i class="fa-solid fa-cloud-sun" style="color:var(--secondary)"></i>
+    Weather Monitoring
+  </h3>
+
+  <p>🌡 Temperature : 29°C</p>
+  <p>💨 Wind Speed : 12 km/h</p>
+  <p>💧 Humidity : 68%</p>
+  <p>☔ Rain Forecast : Low</p>
+</div>
 
     <!-- Details Panels -->
     <div class="dash-panel-grid">
@@ -164,6 +184,7 @@
     </div>
   </main>
   <script>
+
 const menuToggle = document.getElementById("menuToggle");
 const sidebar = document.getElementById("sidebar");
 

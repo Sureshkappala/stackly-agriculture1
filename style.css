@@ -3568,3 +3568,142 @@ body.menu-open{
     overflow-y:auto;
     padding:15px;
 }
+.mobile-dashboard-modules{
+    display:none;
+}
+
+@media (max-width:768px){
+
+    .mobile-dashboard-modules{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:15px;
+        margin-top:20px;
+    }
+
+    .mobile-card{
+        background:#081421;
+        border:1px solid rgba(0,255,136,0.2);
+        border-radius:15px;
+        padding:15px;
+        color:#fff;
+    }
+
+    .mobile-card h3{
+        color:#00ff88;
+        margin-bottom:10px;
+    }
+}
+@media (max-width:768px){
+
+    .dash-menu-list{
+        display:block;
+    }
+
+}
+@media (max-width:768px){
+
+    .dash-sidebar{
+        position:fixed;
+        left:-280px;
+        top:0;
+        width:280px;
+        height:100vh;
+        transition:0.3s;
+        z-index:9999;
+    }
+
+    .dash-sidebar.active{
+        left:0;
+    }
+
+    .menu-toggle{
+        display:block;
+        cursor:pointer;
+    }
+}
+body{
+    margin:0;
+    padding:20px;
+    background:#080c14;
+    color:white;
+    font-family:Arial, sans-serif;
+}
+
+.weather-card{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:15px;
+    padding:20px;
+    max-width:400px;
+    margin:30px auto;
+    box-shadow:0 0 20px rgba(0,180,255,0.2);
+}
+
+.weather-card h1{
+    font-size:24px;
+    margin-bottom:20px;
+    color:#00f080;
+}
+
+.weather-item{
+    background:rgba(255,255,255,0.03);
+    padding:15px;
+    margin-bottom:10px;
+    border-radius:10px;
+    font-size:18px;
+}
+
+.weather-item span{
+    color:#00b4ff;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+    .weather-card{
+        width:100%;
+        padding:15px;
+    }
+
+    .weather-card h1{
+        font-size:22px;
+    }
+
+    .weather-item{
+        font-size:16px;
+    }
+}
+body{
+    margin:0;
+    padding:20px;
+    background:#080c14;
+    color:white;
+    font-family:Arial,sans-serif;
+}
+
+.crop-card{
+    max-width:400px;
+    margin:auto;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:15px;
+    padding:20px;
+}
+
+h1{
+    color:#00f080;
+    margin-bottom:20px;
+}
+
+.crop-item{
+    background:rgba(255,255,255,0.03);
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:12px;
+}
+
+span{
+    color:#00f080;
+    font-weight:bold;
+}

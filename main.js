@@ -392,7 +392,9 @@ function initUniversal404Router() {
       if (!isNavigablePage && !isTabOrDot) {
         el.addEventListener('click', (e) => {
           e.preventDefault();
-          window.location.href = '404.html';
+          if (pageName.includes('dashboard-user.html') || pageName.includes('dashboard-admin.html')) {
+   return;
+}
         });
       }
     });
@@ -410,7 +412,9 @@ function initUniversal404Router() {
         el.addEventListener('click', (e) => {
           e.preventDefault();
           e.stopPropagation();
-          window.location.href = '404.html';
+          if (pageName.includes('dashboard-user.html') || pageName.includes('dashboard-admin.html')) {
+   return;
+}
         });
       }
     });
@@ -438,6 +442,16 @@ if(nameField){
 if(mobileField){
     mobileField.addEventListener("input", function () {
         this.value = this.value.replace(/[^0-9]/g, "");
+    });
+}
+
+
+const menuToggle = document.getElementById("menuToggle");
+const sidebar = document.getElementById("sidebar");
+
+if(menuToggle && sidebar){
+    menuToggle.addEventListener("click", function(){
+        sidebar.classList.toggle("active");
     });
 }
 
