@@ -2751,7 +2751,7 @@ body{
     .dash-sidebar{
         position:fixed;
         top:0;
-        left:-280px;
+        left:0px;
         width:260px;
         height:100vh;
         z-index:9999;
@@ -3615,7 +3615,7 @@ body.menu-open{
 
     .dash-sidebar{
         position:fixed;
-        left:-280px;
+        left:0px;
         top:0;
         width:280px;
         height:100vh;
@@ -3877,14 +3877,12 @@ span{
     height: 100vh;
   }
 
-  .dash-main {
-    overflow-y: auto;
-  }
+
 }
 @media (max-width: 768px){
 
     .dash-sidebar.active{
-        overflow-y: auto;
+        
         height: 100vh;
     }
 
@@ -3925,7 +3923,7 @@ body{
     .dash-sidebar{
         position:fixed;
         top:0;
-        left:-280px;
+        left:0px;
         width:260px;
         height:100vh;
         overflow:hidden;
@@ -3966,10 +3964,10 @@ body {
     .dash-sidebar{
         position: fixed !important;
         top: 0;
-        left: -280px;
+        left: 0;
         width: 260px;
         height: 100vh !important;
-        overflow-y: auto;
+        
         z-index: 9999;
     }
 
@@ -3979,7 +3977,7 @@ body {
 
     .dash-main{
         height: 100vh !important;
-        overflow-y: auto;
+        
     }
 }
 /* Desktop */
@@ -4004,7 +4002,7 @@ body {
 
     .dash-sidebar{
         position:fixed;
-        left:-280px;
+        left:0;
     }
 
     .dash-sidebar.active{
@@ -4035,4 +4033,155 @@ body {
   .menu-toggle {
     display: none !important;
   }
+}
+/* Crop Analytics Mobile Text Size */
+.crop-card h1{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.crop-item{
+    font-size: 18px;
+    padding: 14px;
+}
+
+.crop-item span{
+    font-size: 20px;
+    font-weight: bold;
+    color: #00ff99;
+}
+
+/* Content Cards */
+.info-card{
+    padding: 18px;
+}
+
+.info-card h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.info-card p,
+.info-card li{
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Buttons */
+.action-btn{
+    font-size: 16px;
+    padding: 14px;
+}
+.dash-panel-box h3{
+    font-size: 24px;
+}
+
+.dash-panel-box p,
+.dash-panel-box li{
+    font-size: 18px;
+    line-height: 1.8;
+}
+/* Weather Monitoring */
+.weather-card h1{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.weather-item{
+    font-size: 18px;
+    padding: 14px;
+}
+
+.weather-item span{
+    font-size: 20px;
+    font-weight: bold;
+    color: #00ff99;
+}
+
+/* Extra Content Cards */
+.weather-info-card{
+    padding: 18px;
+    margin-top: 15px;
+}
+
+.weather-info-card h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.weather-info-card p,
+.weather-info-card li{
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Buttons */
+.action-btn{
+    font-size: 16px;
+    padding: 14px;
+}
+.weather-card p{
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.weather-card h3{
+    font-size: 22px;
+}
+@media (max-width:768px){
+
+    #crop-analytics h3,
+    #weather-monitoring h3{
+        font-size: 28px;
+    }
+
+    #crop-analytics p,
+    #weather-monitoring p{
+        font-size: 18px;
+    }
+}
+.dash-panel-box h3{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.dash-panel-box p{
+    font-size: 1.5rem;
+    line-height: 2;
+    margin-bottom: 15px;
+}
+
+.dash-panel-box li{
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+.dash-panel-box{
+    padding: 35px;
+}
+@media (max-width:768px){
+
+    html,
+    body{
+        height:100vh !important;
+        overflow:hidden !important;
+    }
+
+    .dash-layout{
+        height:100vh !important;
+        overflow:hidden !important;
+    }
+
+    .dash-main{
+        height:100vh !important;
+        overflow:hidden !important;
+    }
+
+    .dash-sidebar{
+        height:100vh !important;
+        overflow:hidden !important;
+    }
 }
