@@ -446,15 +446,6 @@ if(mobileField){
 }
 
 
-const menuToggle = document.getElementById("menuToggle");
-const sidebar = document.getElementById("sidebar");
-
-if(menuToggle && sidebar){
-    menuToggle.addEventListener("click", function(){
-        sidebar.classList.toggle("active");
-    });
-}
-
 function toggleMenu(){
     document.getElementById("sideMenu").classList.toggle("active");
 }
