@@ -4246,3 +4246,134 @@ body{
 .dash-main{
     overflow-y:auto !important;
 }
+.weather-card h1{
+    font-size: 28px;
+}
+
+.weather-item{
+    font-size: 18px;
+}
+
+.weather-item span{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.weather-section h3{
+    font-size: 20px;
+}
+
+.weather-section p,
+.weather-section li{
+    font-size: 17px;
+    line-height: 1.8;
+}
+.menu-toggle{
+    font-size: 32px;
+}
+.menu-btn{
+    font-size: 24px;
+}
+/* Weather Page Title */
+.weather-title,
+.dashboard-title {
+    font-size: 32px !important;
+    font-weight: 700;
+}
+
+/* Temperature, Humidity, Rain Values */
+.dash-metric-number {
+    font-size: 32px !important;
+    font-weight: 700;
+}
+
+/* Temperature Labels */
+.dash-metric-title {
+    font-size: 16px !important;
+    font-weight: 600;
+}
+
+/* Status Text */
+.dash-metric-trend {
+    font-size: 15px !important;
+}
+
+/* Forecast Section */
+.weather-card h3 {
+    font-size: 22px !important;
+}
+
+.weather-card p,
+.weather-card li {
+    font-size: 18px !important;
+    line-height: 1.8;
+}
+
+/* Environmental Conditions */
+.weather-details p {
+    font-size: 18px !important;
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+    .dash-metric-number{
+        font-size:40px !important;
+    }
+
+    .dash-metric-title{
+        font-size:26px !important;
+    }
+
+    .dash-metric-trend{
+        font-size:25px !important;
+    }
+
+    .weather-card h3{
+        font-size:32px !important;
+    }
+
+    .weather-card p,
+    .weather-card li{
+        font-size:28px !important;
+    }
+}
+.dash-metric-number{
+    font-size:22px !important;
+    font-weight:700;
+}
+@media (max-width:768px){
+
+    .dash-metric-number{
+        font-size:22px !important;
+    }
+
+    .dash-metric-title{
+        font-size:13px !important;
+    }
+
+    .dash-panel-box p{
+        font-size:14px !important;
+    }
+
+    .dashboard-title,
+    .weather-title,
+    .crop-title{
+        font-size:24px !important;
+    }
+}
+.dash-metric-number{
+    font-size:24px !important;
+    font-weight:700;
+}
+.dash-metric-title{
+    font-size:16px !important;
+}
+
+.dash-metric-number{
+    font-size:24px !important;
+}
+
+.dash-metric-trend{
+    font-size:14px !important;
+}
