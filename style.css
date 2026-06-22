@@ -4015,3 +4015,24 @@ body {
         display:block;
     }
 }
+/* DESKTOP FIX */
+@media (min-width: 769px) {
+
+  .dash-sidebar {
+    display: flex !important;
+    position: relative !important;
+    left: 0 !important;
+    width: 280px !important;
+    height: 100vh !important;
+    visibility: visible !important;
+  }
+
+  .dash-main {
+    margin-left: 0 !important;
+    width: calc(100% - 280px) !important;
+  }
+
+  .menu-toggle {
+    display: none !important;
+  }
+}
