@@ -3982,3 +3982,36 @@ body {
         overflow-y: auto;
     }
 }
+/* Desktop */
+@media (min-width:769px){
+
+    .dash-sidebar{
+        position:relative !important;
+        left:0 !important;
+        display:flex !important;
+        flex-direction:column;
+        width:280px;
+        height:100vh;
+    }
+
+    .menu-toggle{
+        display:none !important;
+    }
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+    .dash-sidebar{
+        position:fixed;
+        left:-280px;
+    }
+
+    .dash-sidebar.active{
+        left:0;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+}
