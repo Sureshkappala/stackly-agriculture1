@@ -458,6 +458,20 @@ if(menuToggle && sidebar){
 function toggleMenu(){
     document.getElementById("sideMenu").classList.toggle("active");
 }
+const menuToggle = document.getElementById("menuToggle");
+const sidebar = document.getElementById("sidebar");
+
+menuToggle.addEventListener("click", () => {
+
+    sidebar.classList.toggle("active");
+
+    if(sidebar.classList.contains("active")){
+        document.body.classList.add("menu-open");
+    }else{
+        document.body.classList.remove("menu-open");
+    }
+
+});
 
 
 

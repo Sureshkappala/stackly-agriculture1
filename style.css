@@ -1756,7 +1756,7 @@ section {
 }
 
 .dash-sidebar {
-  width: 280px;
+  width: 220px;
   background: #090e18;
   border-right: 1px solid var(--border-color);
   display: flex;
@@ -3873,7 +3873,6 @@ span{
 }
 @media (max-width: 768px) {
   body.menu-open {
-    overflow: hidden;
     height: 100vh;
   }
 
@@ -3909,16 +3908,11 @@ span{
     left: 0;
 }
 
-body{
-    overflow: hidden;
-}
 
 }
 @media (max-width:768px){
 
-    body.menu-open{
-        overflow:hidden;
-    }
+    
 
     .dash-sidebar{
         position:fixed;
@@ -3944,15 +3938,11 @@ body{
         display:block;
     }
 }
-html,
-body {
-    overflow-x: hidden !important;
-}
 
 @media (max-width:768px){
 
     body{
-        overflow: hidden !important;
+        
         height: 100vh !important;
     }
 
@@ -4184,4 +4174,75 @@ body {
         height:100vh !important;
         overflow:hidden !important;
     }
+}
+@media (max-width:768px){
+
+    .dash-sidebar{
+        width: 220px !important;
+        left: -220px;
+    }
+
+    .dash-sidebar.active{
+        left: 0;
+    }
+
+    .dash-main{
+        width: 100%;
+    }
+}
+@media(max-width:768px){
+
+.dash-sidebar{
+    height: 100vh;
+}
+
+
+}
+@media (max-width:768px){
+
+html,
+body{
+    height:auto !important;
+    
+}
+
+.dash-layout{
+    height:auto !important;
+    min-height:100vh !important;
+    overflow:visible !important;
+}
+
+.dash-main{
+    height:auto !important;
+    min-height:100vh !important;
+    overflow-y:visible !important;
+    overflow-x:hidden !important;
+}
+
+}
+body.menu-open{
+    overflow: hidden !important;
+    position: fixed;
+    width: 100%;
+}
+
+.dash-sidebar{
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 280px;
+    height: 100vh;
+    z-index: 9999;
+    transition: 0.3s;
+}
+
+.dash-sidebar.active{
+    left: 0;
+}
+body{
+    overflow-y:auto !important;
+}
+
+.dash-main{
+    overflow-y:auto !important;
 }
