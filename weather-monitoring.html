@@ -4,6 +4,17 @@
 <title>Weather Monitoring</title>
 <link rel="stylesheet" href="style.css">
 </head>
+<div class="top-bar">
+    <button class="menu-btn" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <div class="side-menu" id="sideMenu">
+        <a href="dashboard-user.html">🏠 Home</a>
+        <a href="crop-analytics.html">🌱 Crop Analytics</a>
+        <a href="weather-monitoring.html">🌦 Weather Monitoring</a>
+    </div>
+</div>
 <body>
 <div class="weather-card">
 
@@ -24,5 +35,42 @@
     <div class="weather-item">
         Wind Speed : <span>12 km/h</span>
     </div>
+    <div class="weather-item">
+    UV Index : <span>6.5</span>
+</div>
+
+<div class="weather-item">
+    Sunrise : <span>5:42 AM</span>
+</div>
+
+<div class="weather-item">
+    Sunset : <span>6:37 PM</span>
+</div>
+
+<div class="weather-item">
+    Visibility : <span>12 km</span>
+</div>
+
+<div class="weather-item">
+    Soil Temperature : <span>24°C</span>
+</div>
+<div style="margin-top:20px;display:flex;flex-direction:column;gap:10px;">
+
+    <a href="404.html" class="action-btn">
+    Download Report
+</a>
+
+<a href="404.html" class="action-btn">
+    Refresh Data
+</a>
 
 </div>
+
+</div>
+<script>
+function toggleMenu() {
+    document.getElementById("sideMenu").classList.toggle("active");
+}
+</script>
+</body>
+</html>

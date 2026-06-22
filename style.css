@@ -3707,3 +3707,57 @@ span{
     color:#00f080;
     font-weight:bold;
 }
+.top-bar{
+    display:flex;
+    justify-content:flex-end;
+    margin-bottom:20px;
+}
+
+.menu-btn{
+    background:#00f080;
+    color:#000;
+    border:none;
+    padding:10px 14px;
+    border-radius:8px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.side-menu{
+    display:none;
+    position:absolute;
+    top:60px;
+    right:20px;
+    width:220px;
+    background:#111827;
+    border-radius:10px;
+    overflow:hidden;
+    z-index:999;
+}
+
+.side-menu a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:15px;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.side-menu a:hover{
+    background:#00f080;
+    color:#000;
+}
+
+.side-menu.active{
+    display:block;
+}
+.action-btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#00f080;
+    color:#000;
+    font-weight:bold;
+    cursor:pointer;
+}

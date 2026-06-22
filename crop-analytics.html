@@ -4,6 +4,17 @@
 <title>Crop Analytics</title>
 <link rel="stylesheet" href="style.css">
 </head>
+<div class="top-bar">
+    <button class="menu-btn" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <div class="side-menu" id="sideMenu">
+        <a href="dashboard-user.html">🏠 Home</a>
+        <a href="crop-analytics.html">🌱 Crop Analytics</a>
+        <a href="weather-monitoring.html">🌦 Weather Monitoring</a>
+    </div>
+</div>
 <body>
 
 <div class="crop-card">
@@ -29,5 +40,43 @@ Water Efficiency : <span>88%</span>
 <div class="crop-item">
 Soil Quality : <span>85%</span>
 </div>
+<div class="crop-item">
+    Fertilizer Usage : <span>76%</span>
+</div>
+
+<div class="crop-item">
+    Harvest Readiness : <span>89%</span>
+</div>
+
+<div class="crop-item">
+    Pest Detection Risk : <span>Low</span>
+</div>
+
+<div class="crop-item">
+    Active Sensors : <span>156</span>
+</div>
+
+<div class="crop-item">
+    Farm Coverage : <span>450 Acres</span>
+</div>
+<div style="margin-top:20px;display:flex;flex-direction:column;gap:10px;">
+
+    <a href="404.html" class="action-btn">
+    Download Report
+</a>
+
+<a href="404.html" class="action-btn">
+    Refresh Data
+</a>
+    
 
 </div>
+
+</div>
+<script>
+function toggleMenu() {
+    document.getElementById("sideMenu").classList.toggle("active");
+}
+</script>
+</body>
+</html>
