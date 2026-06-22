@@ -47,6 +47,7 @@
 
     <!-- Sidebar Menus -->
 <ul class="dash-menu-list">
+    
 
   <li>
     <a href="crop-analytics.html" class="dash-menu-item-link">
@@ -199,8 +200,15 @@ const sidebar = document.getElementById("sidebar");
 
 menuToggle.addEventListener("click", () => {
     sidebar.classList.toggle("active");
+
+    if(sidebar.classList.contains("active")){
+        document.body.style.overflow = "hidden";
+    } else {
+        document.body.style.overflow = "auto";
+    }
 });
 </script>
+
 
   <!-- Shared Actions Parser -->
   <script src="main.js"></script>
